@@ -48,8 +48,8 @@
    * estas serían las que necesitamos, al menos para la **versión de Fernando de Simpact**  
    * en el caso de la versión paralela, como en general hay que probar cosas para mejorar rendimiento, pero al final uno siempre se queda con una opción, pondremos en una misma configuración los diferentes conjuntos de opciones e iremos comentando y descomentanto o usando un sistema de *if* en el que la bandera sea parte del código y no un argumento de entrada - esa es la opción para que Jere no trabaje tanto; si se vuelve imperativo, haremos algo más elaborado
 * sobre TecIO:
-   * info en [Warped](https://www.tecplot.com/products/tecio-library/)
-   * más resumido en  [Warped](http://download.tecplot.com/docs/TecplotTecIODatasheet.pdf)
+   * info [acá](https://www.tecplot.com/products/tecio-library/)
+   * más resumido [acá](http://download.tecplot.com/docs/TecplotTecIODatasheet.pdf)
    * un resumen
       * Dynamic libraries for TecIO are shipped with Tecplot 360. They are found in the bin folder of the Tecplot 360 installation, header (include) files are found in the include folder and example programs are found beneath the util/tecio folder. All platforms supported by Tecplot 360 are supported by the static and dynamic TecIO libraries.
       * TecIO uses a C API, so it can easily be called from C, C++, or Fortran. The tecio/examples folder contains both C++ and Fortran examples.
