@@ -44,6 +44,6 @@
         /d "NDEBUG" /l 0x0409 /fo "Release Parallel OMP MKL/v720b.res"  
         /nologo /char signed /env win32 /h "v720b_h.h" /tlb "Release Parallel OMP MKL/v720b.tlb"  
         /nologo /outputresource:"c:/uti/v720bHFdNEWpOMPmkl.exe;#1"  
-        este es de la versión con *paralelización*, *OpenMP* y la vesión paralela de MKL  
-estas serían las que necesitamos, al menos para la **versión de Fernando de Simpact**  
-en el caso de la versión paralela, como en general hay que probar cosas para mejorar rendimiento, pero al final uno siempre se queda con una opción, pondremos en una misma configuración los diferentes conjuntos de opciones e iremos comentando y descomentanto o usando un sistema de *if* en el que la bandera sea parte del código y no un argumento de entrada - esa es la opción para que Jere no trabaje tanto; si se vuelve imperativo, haremos algo más elaborado
+        este es de la versión con *paralelización*, *OpenMP* y la vesión paralela de MKL
+   * estas serían las que necesitamos, al menos para la **versión de Fernando de Simpact**  
+   * en el caso de la versión paralela, como en general hay que probar cosas para mejorar rendimiento, pero al final uno siempre se queda con una opción, pondremos en una misma configuración los diferentes conjuntos de opciones e iremos comentando y descomentanto o usando un sistema de *if* en el que la bandera sea parte del código y no un argumento de entrada - esa es la opción para que Jere no trabaje tanto; si se vuelve imperativo, haremos algo más elaborado
