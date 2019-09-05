@@ -18,6 +18,7 @@
     * incluir las opciones de compilación usadas para esas configuraciones en VisualStudio para tener de guía inicial
 * pedir fuentes actualizadas a Chinesse
 * buscar info sobre TecIO <- **done**
+* **pasar este archivo al proyecto Simpact**
 ### va
 * las configuraciones deberían ser (las opciones de compilación son las que usa VisualStudio, no necesariamente las que queremos)
     * serial 64 debug  
