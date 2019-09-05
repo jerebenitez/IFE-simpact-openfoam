@@ -14,10 +14,10 @@
 ## Mauro:
 * pasar en limpio actividades <- **done**
 * incorporar al Luis en el repositorio <- **¿puedo hacerlo yo? lo intenté y no me salió**
-* hacer lista deseable de configuraciones
+* hacer lista deseable de configuraciones <- **done**
     * incluir las opciones de compilación usadas para esas configuraciones en VisualStudio para tener de guía inicial
 * pedir fuentes actualizadas a Chinesse
-* buscar info sobre TecIO
+* buscar info sobre TecIO <- **done**
 ### va
 * las configuraciones deberían ser (las opciones de compilación son las que usa VisualStudio, no necesariamente las que queremos)
     * serial 64 debug  
