@@ -643,7 +643,7 @@
    !
    !*********************************************************************
 
-   USE ifport  !Intel Compiler
+   !USE ifport  !Intel Compiler
    USE name_db, ONLY: input, output, prognm, rsfprj, rsfstg, rsfnam, data_file,gen_data_file
    USE gvar_db, ONLY: actchk
    IMPLICIT NONE
