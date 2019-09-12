@@ -23,9 +23,9 @@
 !--- Constants to limit usage
 !MS$if acad > 0
    !--- for academic version
-   INTEGER(kind=4),PARAMETER:: max_npoin_2d =     400, & !Maximum number of nodes por 2D problems
-                               max_npoin_3d =    1000, & !Maximum number of nodes for 3D problems
-                               max_memo     =   524000   !Maximum value for memo in beginp
+!   INTEGER(kind=4),PARAMETER:: max_npoin_2d =     400, & !Maximum number of nodes por 2D problems
+!                               max_npoin_3d =    1000, & !Maximum number of nodes for 3D problems
+!                               max_memo     =   524000   !Maximum value for memo in beginp
 !MS$else
    !--- full version
    INTEGER(kind=4),PARAMETER:: max_npoin_2d =  100000, & !Maximum number of nodes por 2D problems
