@@ -269,24 +269,24 @@
      NULLIFY (posic)
    END SUBROUTINE cut_ele04e
 
-   INCLUDE 'acvd04.fi'
-   INCLUDE 'axep04.fi'
-   INCLUDE 'bmat04.fi'
-   INCLUDE 'comm04.fi'
-   INCLUDE 'delt04.fi'
-   INCLUDE 'dump04.fi'
-   INCLUDE 'elmd04.fi'
-   INCLUDE 'gaus04.fi'
-   INCLUDE 'gaus04n.fi'
-   !INCLUDE 'load04.fi'
-   INCLUDE 'mase04.fi'
-   INCLUDE 'luma04.fi'
-   INCLUDE 'outd04.fi'
-   INCLUDE 'rest04.fi'
-   INCLUDE 'resv04.fi'
-   INCLUDE 'resv04n.fi'
-   INCLUDE 'resv04e.fi'
-   INCLUDE 'toar04.fi'
-   INCLUDE 'toar04n.fi'
+   include "acvd04.inc"
+   include "axep04.inc"
+   include "bmat04.inc"
+   include "comm04.inc"
+   include "delt04.inc"
+   include "dump04.inc"
+   include "elmd04.inc"
+   include "gaus04.inc"
+   include "gaus04n.inc"
+   !include "load04.inc"
+   include "mase04.inc"
+   include "luma04.inc"
+   include "outd04.inc"
+   include "rest04.inc"
+   include "resv04.inc"
+   include "resv04n.inc"
+   include "resv04e.inc"
+   include "toar04.inc"
+   include "toar04n.inc"
 
  END MODULE ele04_db

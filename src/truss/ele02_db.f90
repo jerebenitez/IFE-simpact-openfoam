@@ -215,20 +215,20 @@
      NULLIFY (posic)
    END SUBROUTINE cut_ele02e
 
-   INCLUDE 'acvdf2.fi'
-   INCLUDE 'commv2.fi'
-   INCLUDE 'deltc2.fi'
-   INCLUDE 'dumpi2.fi'
-   INCLUDE 'elmda2.fi'
-   INCLUDE 'gauss2.fi'
-   !INCLUDE 'loadp2.fi'
-   INCLUDE 'lumas2.fi'
-   INCLUDE 'masel2.fi'
-   INCLUDE 'outdy2.fi'
-   INCLUDE 'resta2.fi'
-   INCLUDE 'resvp2.fi'
-   INCLUDE 'stra02.fi'
-   INCLUDE 'stre02.fi'
-   INCLUDE 'updlo2.fi'
+   include "acvdf2.inc"
+   include "commv2.inc"
+   include "deltc2.inc"
+   include "dumpi2.inc"
+   include "elmda2.inc"
+   include "gauss2.inc"
+   !include "loadp2.inc"
+   include "lumas2.inc"
+   include "masel2.inc"
+   include "outdy2.inc"
+   include "resta2.inc"
+   include "resvp2.inc"
+   include "stra02.inc"
+   include "stre02.inc"
+   include "updlo2.inc"
 
  END MODULE ele02_db

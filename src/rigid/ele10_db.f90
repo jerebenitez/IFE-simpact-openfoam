@@ -126,22 +126,22 @@
      DEALLOCATE (elset)
    END SUBROUTINE dalloc10
 
-   INCLUDE 'acvd10.fi'
-   INCLUDE 'code10.fi'
-   INCLUDE 'comm10.fi'
-   INCLUDE 'dump10.fi'
-   INCLUDE 'elmd10.fi'
-   INCLUDE 'gaus10.fi'
-   INCLUDE 'luma10.fi'
-   INCLUDE 'mase10.fi'
-   INCLUDE 'poin10.fi'
-   INCLUDE 'rearb0.fi'
-   INCLUDE 'rest10.fi'
-   INCLUDE 'rigb10.fi'
-   INCLUDE 'rigbdy.fi'
-   INCLUDE 'surf10.fi'
-   INCLUDE 'tlma10.fi'
-   INCLUDE 'tres10.fi'
-   INCLUDE 'updl10.fi'
+   include "acvd10.inc"
+   include "code10.inc"
+   include "comm10.inc"
+   include "dump10.inc"
+   include "elmd10.inc"
+   include "gaus10.inc"
+   include "luma10.inc"
+   include "mase10.inc"
+   include "poin10.inc"
+   include "rearb0.inc"
+   include "rest10.inc"
+   include "rigb10.inc"
+   include "rigbdy.inc"
+   include "surf10.inc"
+   include "tlma10.inc"
+   include "tres10.inc"
+   include "updl10.inc"
 
  END MODULE ele10_db

@@ -97,16 +97,16 @@
           NULLIFY (posic,anter)
         END SUBROUTINE del_ele22
 
-  INCLUDE 'acvd22.fi'
-  INCLUDE 'code22.fi'
-  INCLUDE 'comm22.fi'
-  INCLUDE 'elmd22.fi'
-  INCLUDE 'gaus22.fi'
-  INCLUDE 'gauste.fi'
-  INCLUDE 'heat22.fi'
-  INCLUDE 'luma22.fi'
-  INCLUDE 'mase22.fi'
-  INCLUDE 'poin22.fi'
-  INCLUDE 'updl22.fi'
+  include "acvd22.inc"
+  include "code22.inc"
+  include "comm22.inc"
+  include "elmd22.inc"
+  include "gaus22.inc"
+  include "gauste.inc"
+  include "heat22.inc"
+  include "luma22.inc"
+  include "mase22.inc"
+  include "poin22.inc"
+  include "updl22.inc"
       END MODULE ele22_db
 

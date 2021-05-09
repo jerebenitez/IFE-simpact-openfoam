@@ -427,23 +427,23 @@
      RETURN
    END SUBROUTINE search_ele11
 
-   INCLUDE 'acvd11.fi'
-   INCLUDE 'bfle11.fi'
-   INCLUDE 'bmem11.fi'
-   INCLUDE 'comm11.fi'
-   INCLUDE 'delt11.fi'
-   INCLUDE 'dump11.fi'
-   INCLUDE 'gaus11.fi'
-   INCLUDE 'elmd11.fi'
-   INCLUDE 'luma11.fi'
-   INCLUDE 'mase11.fi'
-   INCLUDE 'outd11.fi'
-   INCLUDE 'rest11.fi'
-   INCLUDE 'resv11.fi'
-   INCLUDE 'stra11.fi'
-   INCLUDE 'streb2.fi'
-   INCLUDE 'surf11.fi'
-   INCLUDE 'toar11.fi'
-   INCLUDE 'updl11.fi'
+   include "acvd11.inc"
+   include "bfle11.inc"
+   include "bmem11.inc"
+   include "comm11.inc"
+   include "delt11.inc"
+   include "dump11.inc"
+   include "gaus11.inc"
+   include "elmd11.inc"
+   include "luma11.inc"
+   include "mase11.inc"
+   include "outd11.inc"
+   include "rest11.inc"
+   include "resv11.inc"
+   include "stra11.inc"
+   include "streb2.inc"
+   include "surf11.inc"
+   include "toar11.inc"
+   include "updl11.inc"
 
   END MODULE ele11_db

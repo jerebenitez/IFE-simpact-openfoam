@@ -232,26 +232,26 @@
      NULLIFY (posic)
    END SUBROUTINE cut_ele09e
 
-   INCLUDE 'acvdf9.fi'
-   INCLUDE 'btstr9.fi'
-   INCLUDE 'commv9.fi'
-   INCLUDE 'deltc9.fi'
-   INCLUDE 'dump09.fi'
-   INCLUDE 'elmda9.fi'
-   INCLUDE 'gauss9.fi'
-   INCLUDE 'intrf9.fi'
-   INCLUDE 'istgp9.fi'
-   !INCLUDE 'loadp9.fi'
-   INCLUDE 'locla9.fi'
-   INCLUDE 'lumas9.fi'
-   INCLUDE 'masel9.fi'
-   INCLUDE 'nodxy9.fi'
-   INCLUDE 'outdy9.fi'
-   INCLUDE 'rest09.fi'
-   INCLUDE 'resvp9.fi'
-   INCLUDE 'setga9.fi'
-   INCLUDE 'stran9.fi'
-   INCLUDE 'surf09.fi'
-   INCLUDE 'updlo9.fi'
+   include "acvdf9.inc"
+   include "btstr9.inc"
+   include "commv9.inc"
+   include "deltc9.inc"
+   include "dump09.inc"
+   include "elmda9.inc"
+   include "gauss9.inc"
+   include "intrf9.inc"
+   include "istgp9.inc"
+   !include "loadp9.inc"
+   include "locla9.inc"
+   include "lumas9.inc"
+   include "masel9.inc"
+   include "nodxy9.inc"
+   include "outdy9.inc"
+   include "rest09.inc"
+   include "resvp9.inc"
+   include "setga9.inc"
+   include "stran9.inc"
+   include "surf09.inc"
+   include "updlo9.inc"
 
   END MODULE ele09_db

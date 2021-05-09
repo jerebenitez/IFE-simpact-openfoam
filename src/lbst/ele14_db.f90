@@ -332,30 +332,30 @@
    RETURN
    END SUBROUTINE copy_ele14e
 
-   INCLUDE 'acvd14.fi'
-   INCLUDE 'axep14.fi'
-   INCLUDE 'bfle14.fi'
-   !INCLUDE 'boun14.fi' !not used presently
-   INCLUDE 'comm14.fi'
-   INCLUDE 'delt14.fi'
-   INCLUDE 'dump14.fi'
-   INCLUDE 'elmd14.fi'
-   INCLUDE 'expo14.fi'
-   INCLUDE 'gaus14.fi'
-   INCLUDE 'impo14.fi'
-   INCLUDE 'inig14.fi'
-   INCLUDE 'luma14.fi'
-   INCLUDE 'mase14.fi'
-   INCLUDE 'nods14.fi'
-   INCLUDE 'outd14.fi'
-   INCLUDE 'rest14.fi'
-   INCLUDE 'resv14.fi'
-   INCLUDE 'secd14.fi'
-   INCLUDE 'slum14.fi'
-   INCLUDE 'stra14.fi'
-   INCLUDE 'stst14.fi'
-   INCLUDE 'surf14.fi'
-   INCLUDE 'toar14.fi'
-   INCLUDE 'updl14.fi'
+   include "acvd14.inc"
+   include "axep14.inc"
+   include "bfle14.inc"
+   !include "boun14.inc" !not used presently
+   include "comm14.inc"
+   include "delt14.inc"
+   include "dump14.inc"
+   include "elmd14.inc"
+   include "expo14.inc"
+   include "gaus14.inc"
+   include "impo14.inc"
+   include "inig14.inc"
+   include "luma14.inc"
+   include "mase14.inc"
+   include "nods14.inc"
+   include "outd14.inc"
+   include "rest14.inc"
+   include "resv14.inc"
+   include "secd14.inc"
+   include "slum14.inc"
+   include "stra14.inc"
+   include "stst14.inc"
+   include "surf14.inc"
+   include "toar14.inc"
+   include "updl14.inc"
 
  END MODULE ele14_db

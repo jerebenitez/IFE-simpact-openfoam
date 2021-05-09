@@ -215,18 +215,18 @@
      NULLIFY (posic)
    END SUBROUTINE cut_ele01e
 
-   INCLUDE 'acvdf1.fi'
-   INCLUDE 'commv1.fi'
-   INCLUDE 'deltc1.fi'
-   INCLUDE 'dumpi1.fi'
-   INCLUDE 'elmda1.fi'
-   INCLUDE 'gauss1.fi'
-   !INCLUDE 'loadp1.fi'
-   INCLUDE 'lumas1.fi'
-   INCLUDE 'masel1.fi'
-   INCLUDE 'outdy1.fi'
-   INCLUDE 'resta1.fi'
-   INCLUDE 'resvp1.fi'
-   INCLUDE 'updlo1.fi'
+   include "acvdf1.inc"
+   include "commv1.inc"
+   include "deltc1.inc"
+   include "dumpi1.inc"
+   include "elmda1.inc"
+   include "gauss1.inc"
+   !include "loadp1.inc"
+   include "lumas1.inc"
+   include "masel1.inc"
+   include "outdy1.inc"
+   include "resta1.inc"
+   include "resvp1.inc"
+   include "updlo1.inc"
 
  END MODULE ele01_db

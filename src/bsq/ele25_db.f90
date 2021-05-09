@@ -341,27 +341,27 @@
      DEALLOCATE(elem)
    END SUBROUTINE dalloc25e
 
-   INCLUDE 'acvd25.fi'
-   INCLUDE 'axep25.fi'
-   INCLUDE 'bbra25.fi'
-   INCLUDE 'bfle25.fi'
-   INCLUDE 'bmem25.fi'
-   INCLUDE 'bran25.fi'
-   INCLUDE 'comm25.fi'
-   INCLUDE 'delt25.fi'
-   INCLUDE 'dump25.fi'
-   INCLUDE 'elmd25.fi'
-   INCLUDE 'gaus25.fi'
-   INCLUDE 'luma25.fi'
-   INCLUDE 'mase25.fi'
-   INCLUDE 'nghb25.fi'
-   INCLUDE 'outd25.fi'
-   INCLUDE 'rest25.fi'
-   INCLUDE 'resv25.fi'
-   INCLUDE 'slnods25.fi'
-   INCLUDE 'stra25.fi'
-   INCLUDE 'surf25.fi'
-   INCLUDE 'updl25.fi'
+   include "acvd25.inc"
+   include "axep25.inc"
+   include "bbra25.inc"
+   include "bfle25.inc"
+   include "bmem25.inc"
+   include "bran25.inc"
+   include "comm25.inc"
+   include "delt25.inc"
+   include "dump25.inc"
+   include "elmd25.inc"
+   include "gaus25.inc"
+   include "luma25.inc"
+   include "mase25.inc"
+   include "nghb25.inc"
+   include "outd25.inc"
+   include "rest25.inc"
+   include "resv25.inc"
+   include "slnods25.inc"
+   include "stra25.inc"
+   include "surf25.inc"
+   include "updl25.inc"
 
  END MODULE ele25_db
 

@@ -345,26 +345,26 @@ CONTAINS
  RETURN
  END FUNCTION dist
 
-  INCLUDE 'beam_ini.fi'
-  INCLUDE 'cdump1.fi'
-  INCLUDE 'celmn1.fi'
-  INCLUDE 'celmn1p.fi'
-  INCLUDE 'chksu1.fi'
-  INCLUDE 'chsur1.fi'
-  INCLUDE 'cinpu1.fi'
-  INCLUDE 'crest1.fi'
-  INCLUDE 'cscf1a.fi'
-  INCLUDE 'csdat1.fi'
-  INCLUDE 'csinp1.fi'
-  INCLUDE 'cspin1.fi'
-  INCLUDE 'csrfc1.fi'
-  INCLUDE 'cupdl1.fi'
-  INCLUDE 'force1.fi'
-  INCLUDE 'inpco1.fi'
-  INCLUDE 'nearst.fi'
-  INCLUDE 'projt1.fi'
-  INCLUDE 'prsur1.fi'
-  INCLUDE 'surms1.fi'
-  INCLUDE 'upndc1.fi'
+  include "beam_ini.inc"
+  include "cdump1.inc"
+  include "celmn1.inc"
+  include "celmn1p.inc"
+  include "chksu1.inc"
+  include "chsur1.inc"
+  include "cinpu1.inc"
+  include "crest1.inc"
+  include "cscf1a.inc"
+  include "csdat1.inc"
+  include "csinp1.inc"
+  include "cspin1.inc"
+  include "csrfc1.inc"
+  include "cupdl1.inc"
+  include "force1.inc"
+  include "inpco1.inc"
+  include "nearst.inc"
+  include "projt1.inc"
+  include "prsur1.inc"
+  include "surms1.inc"
+  include "upndc1.inc"
 
 END MODULE cont1_db

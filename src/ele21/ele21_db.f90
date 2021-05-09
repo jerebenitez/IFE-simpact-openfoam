@@ -98,16 +98,16 @@ CONTAINS
     NULLIFY (posic,anter)
   END SUBROUTINE del_ele21
 
-  INCLUDE 'acvd21.fi'
-  INCLUDE 'code21.fi'
-  INCLUDE 'comm21.fi'
-  INCLUDE 'deriv1.fi'
-  INCLUDE 'elmd21.fi'
-  INCLUDE 'gaus21.fi'
-  INCLUDE 'heat21.fi'
-  INCLUDE 'luma21.fi'
-  INCLUDE 'poin21.fi'
-  INCLUDE 'shape1t.fi'
-  INCLUDE 'updl21.fi'
+  include "acvd21.inc"
+  include "code21.inc"
+  include "comm21.inc"
+  include "deriv1.inc"
+  include "elmd21.inc"
+  include "gaus21.inc"
+  include "heat21.inc"
+  include "luma21.inc"
+  include "poin21.inc"
+  include "shape1t.inc"
+  include "updl21.inc"
 
 END MODULE ele21_db

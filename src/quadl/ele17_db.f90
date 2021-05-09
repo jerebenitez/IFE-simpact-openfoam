@@ -217,26 +217,26 @@
      NULLIFY (posic)
    END SUBROUTINE cut_ele17e
 
-   INCLUDE 'acvd17.fi'
-   INCLUDE 'bmat17.fi'
-   INCLUDE 'comm17.fi'
-   INCLUDE 'delt17.fi'
-   INCLUDE 'dump17.fi'
-   INCLUDE 'elmd17.fi'
-   INCLUDE 'gaus17.fi'
-   INCLUDE 'jaco17.fi'
-   !INCLUDE 'load17.fi'
-   !INCLUDE 'luma17.fi'
-   INCLUDE 'mase17.fi'
-   INCLUDE 'masm17.fi'
-   INCLUDE 'nods17.fi'
-   INCLUDE 'outd17.fi'
-   INCLUDE 'rest17.fi'
-   INCLUDE 'resv17.fi'
-   INCLUDE 'resv17r.fi'
-   INCLUDE 'slnods17.fi'
-   INCLUDE 'surf17.fi'
-   INCLUDE 'updl17.fi'
+   include "acvd17.inc"
+   include "bmat17.inc"
+   include "comm17.inc"
+   include "delt17.inc"
+   include "dump17.inc"
+   include "elmd17.inc"
+   include "gaus17.inc"
+   include "jaco17.inc"
+   !include "load17.inc"
+   !include "luma17.inc"
+   include "mase17.inc"
+   include "masm17.inc"
+   include "nods17.inc"
+   include "outd17.inc"
+   include "rest17.inc"
+   include "resv17.inc"
+   include "resv17r.inc"
+   include "slnods17.inc"
+   include "surf17.inc"
+   include "updl17.inc"
 
 
  END MODULE ele17_db

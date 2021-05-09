@@ -355,24 +355,24 @@
      RETURN
    END SUBROUTINE new_reinf
 
-   INCLUDE 'acvd15.fi'
-   INCLUDE 'axep15.fi'
-   INCLUDE 'bfle15.fi'
-   INCLUDE 'bmem15.fi'
-   INCLUDE 'comm15.fi'
-   INCLUDE 'delt15.fi'
-   INCLUDE 'dump15.fi'
-   INCLUDE 'elmd15.fi'
-   INCLUDE 'elmd15r.fi'
-   INCLUDE 'gaus15.fi'
-   !INCLUDE 'load15.fi'
-   INCLUDE 'mase15.fi'
-   INCLUDE 'luma15.fi'
-   INCLUDE 'outd15.fi'
-   INCLUDE 'rest15.fi'
-   INCLUDE 'resv15.fi'
-   INCLUDE 'stra15.fi'
-   !INCLUDE 'stst15.fi'
-   INCLUDE 'toar15.fi'
+   include "acvd15.inc"
+   include "axep15.inc"
+   include "bfle15.inc"
+   include "bmem15.inc"
+   include "comm15.inc"
+   include "delt15.inc"
+   include "dump15.inc"
+   include "elmd15.inc"
+   include "elmd15r.inc"
+   include "gaus15.inc"
+   !include "load15.inc"
+   include "mase15.inc"
+   include "luma15.inc"
+   include "outd15.inc"
+   include "rest15.inc"
+   include "resv15.inc"
+   include "stra15.inc"
+   !include "stst15.inc"
+   include "toar15.inc"
 
  END MODULE ele15_db
