@@ -1,0 +1,23 @@
+add_library({{ lib_name }} "")
+
+{% if subdirectories %}
+{% for subdir in subdirectories %}
+add_subdirectory({{ subdir }})
+{% endfor %}
+
+{% endif %}
+{% if link_libraries %}
+target_link_libraries({{ lib_name }}
+  PUBLIC
+    {% for ll in link_libraries %}
+      {{ ll }}
+    {% endfor %}
+)
+{% endif %}
+
+target_sources({{ lib_name }}
+  PUBLIC
+    {% for s in sources %}
+      {{ s }}
+    {% endfor %}
+)

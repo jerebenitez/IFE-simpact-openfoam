@@ -1,0 +1,278 @@
+inpd13.o :  ele13_db.o gvar_db.o
+ele13_db.o :  kinc_db.o mat_dba.o c_input.o param_db.o ctrl_db.o
+elem13.o :  static_db.o ele13_db.o npo_db.o outp_db.o meshmo_db.o ctrl_db.o
+elemt8.o :  outp_db.o npo_db.o ele08_db.o ctrl_db.o
+ele08_db.o :  c_input.o mat_dba.o param_db.o
+inpda8.o :  ele08_db.o
+elemt8.o :  outp_db.o npo_db.o ele08_db.o ctrl_db.o
+ele08_db.o :  c_input.o mat_dba.o param_db.o
+inpda8.o :  ele08_db.o
+ele24_db.o :  kinc_db.o mat_dba.o npo_db.o c_input.o param_db.o ctrl_db.o
+inpd24.o :  ele24_db.o gvar_db.o
+elem24.o :  static_db.o ele24_db.o npo_db.o outp_db.o meshmo_db.o ctrl_db.o
+jacob3.o :  lispa0.o
+lumas5.o :  lispa0.o mat_dba.o
+rembln.o :  param_db.o
+surf05.o :  surf_db.o
+ensvec.o :  kinc_db.o
+ensmal.o :  lispa0.o outp_db.o kinc_db.o
+jacob5.o :  lispa0.o
+surf03.o :  surf_db.o
+ele15_db.o :  c_input.o mat_dba.o param_db.o
+inpd15.o :  ele15_db.o
+elem15.o :  outp_db.o ele15_db.o npo_db.o ctrl_db.o
+ele02_db.o :  c_input.o mat_dba.o param_db.o
+inpda2.o :  ele02_db.o
+stre02_6.o :  mat_dba.o
+stre02_1.o :  mat_dba.o
+elemt2.o :  ele02_db.o outp_db.o npo_db.o ctrl_db.o
+functs.o :  curv_db.o ctrl_db.o
+readpd.o :  kinc_db.o lispa0.o ndp_db.o npo_db.o outp_db.o ctrl_db.o
+fixsld.o :  nsld_db.o kinc_db.o npo_db.o
+lumass.o :  kinc_db.o sms_db.o ndp_db.o npo_db.o cms_db.o outp_db.o ctrl_db.o
+newprb.o :  ctrl_db.o c_input.o name_db.o
+slmass.o :  kinc_db.o static_db.o sms_db.o npo_db.o cms_db.o ctrl_db.o
+reasdf.o :  npo_db.o c_input.o nes_db.o outp_db.o ctrl_db.o
+initial_comp.o :  npo_db.o gvar_db.o param_db.o outp_db.o ctrl_db.o
+outp_db.o :  param_db.o
+rdvels.o :  rve_db.o nsets_db.o c_input.o param_db.o
+rest_cm.o :  cms_db.o
+contac.o :  outp_db.o ctrl_db.o
+rfdp_db.o :  ele11_db.o ele13_db.o
+cms_db.o :  lispa0.o
+byebye.o :  gvar_db.o c_input.o
+outdyn.o :  kinc_db.o lispa0.o npo_db.o c_input.o gvar_db.o outp_db.o ctrl_db.o
+elmdat.o :  esets_db.o outp_db.o npo_db.o ctrl_db.o
+contol.o :  static_db.o esets_db.o npo_db.o c_input.o gvar_db.o param_db.o outp_db.o meshmo_db.o ctrl_db.o
+restar.o :  kinc_db.o sms_db.o gvar_db.o loa_db.o mat_dba.o curv_db.o flc_db.o nsld_db.o c_input.o nsets_db.o meshmo_db.o ctrl_db.o damp_db.o ifx_db.o static_db.o esets_db.o export_db.o name_db.o param_db.o npo_db.o cms_db.o outp_db.o ift_db.o
+rdcoor.o :  damp_db.o kinc_db.o esets_db.o sms_db.o npo_db.o c_input.o nsets_db.o param_db.o loa_db.o cms_db.o outp_db.o ctrl_db.o ndinf_db.o
+trarot.o :  npo_db.o c_input.o gvar_db.o nsets_db.o meshmo_db.o ctrl_db.o param_db.o
+timing.o :  outp_db.o
+ch_d2v.o :  lispa0.o curv_db.o
+dump_cm.o :  cms_db.o
+rdcurv.o :  curv_db.o c_input.o
+conini.o :  outp_db.o ctrl_db.o npo_db.o c_input.o
+screin.o :  name_db.o param_db.o
+incdlt.o :  lispa0.o ctrl_db.o
+rdrfd0.o :  rfdp_db.o npo_db.o c_input.o param_db.o ctrl_db.o
+fixval.o :  kinc_db.o ifx_db.o ctrl_db.o c_input.o
+npo_db.o :  esets_db.o ctrl_db.o
+rdvelr.o :  rve_db.o curv_db.o kinc_db.o c_input.o
+name_db.o :  param_db.o
+surf_db.o :  param_db.o
+rdrfdp.o :  lispa0.o rfdp_db.o npo_db.o outp_db.o ctrl_db.o
+data_inp.o :  damp_db.o export_db.o param_db.o outp_db.o ctrl_db.o
+wrtpos.o :  mat_dba.o flc_db.o npo_db.o c_input.o gvar_db.o outp_db.o ctrl_db.o
+actcd.o :  npo_db.o ctrl_db.o
+line_db.o :  lispa0.o outp_db.o
+nes_db.o :  nsets_db.o c_input.o param_db.o
+rve_db.o :  param_db.o
+intime.o :  npo_db.o c_input.o nsets_db.o outp_db.o ctrl_db.o
+wrtrpt.o :  esets_db.o c_input.o param_db.o
+translate.o :  kind_param.o
+updlon_kc.o :  ifx_db.o rve_db.o rfdp_db.o nar_db.o curv_db.o ndp_db.o nes_db.o param_db.o
+chnode.o :  lispa0.o npo_db.o ctrl_db.o
+inpdat.o :  kinc_db.o ifx_db.o mat_dba.o esets_db.o sms_db.o ndp_db.o npo_db.o c_input.o nes_db.o param_db.o outp_db.o ctrl_db.o
+rdconm.o :  cms_db.o c_input.o
+arisi0.o :  nar_db.o c_input.o
+rdvel0.o :  rve_db.o curv_db.o c_input.o param_db.o
+dynamic.o :  kinc_db.o npo_db.o gvar_db.o loa_db.o param_db.o outp_db.o ctrl_db.o
+rest_el.o :  lispa0.o esets_db.o param_db.o
+dump_kc.o :  rve_db.o rfdp_db.o nar_db.o ndp_db.o nsld_db.o nes_db.o
+explit.o :  damp_db.o kinc_db.o rfdp_db.o sms_db.o nsld_db.o npo_db.o ctrl_db.o
+elemnt.o :  esets_db.o npo_db.o ctrl_db.o
+coract.o :  kinc_db.o rfdp_db.o nsld_db.o npo_db.o ctrl_db.o
+sms_db.o :  kinc_db.o npo_db.o c_input.o param_db.o meshmo_db.o ctrl_db.o
+esets_db.o :  param_db.o
+mainpg.o :  lispa0.o export_db.o gvar_db.o param_db.o name_db.o outp_db.o meshmo_db.o ctrl_db.o
+nsets_db.o :  param_db.o
+coords.o :  surf_db.o
+scale_mass.o :  ctrl_db.o
+sxplit.o :  damp_db.o kinc_db.o sms_db.o npo_db.o ctrl_db.o
+export_db.o :  mat_dba.o esets_db.o npo_db.o c_input.o param_db.o meshmo_db.o ctrl_db.o
+fixrfd.o :  rfdp_db.o kinc_db.o npo_db.o ctrl_db.o
+fixdpd.o :  kinc_db.o npo_db.o ctrl_db.o
+srtind.o :  lispa0.o
+imcoor.o :  damp_db.o kinc_db.o esets_db.o npo_db.o c_input.o nsets_db.o param_db.o loa_db.o cms_db.o outp_db.o ctrl_db.o ndinf_db.o
+newstr.o :  ctrl_db.o meshmo_db.o c_input.o name_db.o
+immtsc.o :  mat_dba.o
+arisin.o :  lispa0.o nar_db.o npo_db.o ctrl_db.o
+readp0.o :  ndp_db.o nsets_db.o c_input.o param_db.o
+inisld.o :  kinc_db.o lispa0.o nsld_db.o npo_db.o outp_db.o ctrl_db.o
+damp_db.o :  nsets_db.o c_input.o param_db.o
+arisfi.o :  kinc_db.o npo_db.o ctrl_db.o
+curv_db.o :  lispa0.o param_db.o
+velnpo.o :  kinc_db.o ctrl_db.o
+delnod.o :  esets_db.o c_input.o nsets_db.o ndinf_db.o param_db.o
+rdsldn.o :  nsld_db.o c_input.o param_db.o
+beginp.o :  kinc_db.o c_input.o name_db.o param_db.o gvar_db.o ctrl_db.o
+ctrl_db.o :  param_db.o
+impfix.o :  gvar_db.o ifx_db.o meshmo_db.o ctrl_db.o
+fixva0.o :  ifx_db.o rve_db.o c_input.o nsets_db.o param_db.o
+eqnums.o :  damp_db.o kinc_db.o ifx_db.o lispa0.o esets_db.o curv_db.o rfdp_db.o ndp_db.o nsld_db.o heat_db.o npo_db.o nes_db.o outp_db.o ctrl_db.o
+rest_kc.o :  rve_db.o rfdp_db.o nar_db.o ndp_db.o nsld_db.o nes_db.o
+endstr.o :  c_input.o
+dumpin.o :  kinc_db.o sms_db.o gvar_db.o loa_db.o mat_dba.o curv_db.o flc_db.o nsld_db.o c_input.o nsets_db.o meshmo_db.o ctrl_db.o damp_db.o ifx_db.o static_db.o esets_db.o export_db.o param_db.o npo_db.o cms_db.o outp_db.o ift_db.o
+masmtx.o :  kinc_db.o sms_db.o ndp_db.o npo_db.o cms_db.o outp_db.o ctrl_db.o
+import.o :  ifx_db.o mat_dba.o esets_db.o npo_db.o c_input.o gvar_db.o param_db.o name_db.o meshmo_db.o ctrl_db.o
+histor.o :  npo_db.o c_input.o nsets_db.o param_db.o outp_db.o ctrl_db.o
+pstatic.o :  damp_db.o kinc_db.o static_db.o rfdp_db.o sms_db.o nsld_db.o npo_db.o gvar_db.o loa_db.o param_db.o c_input.o outp_db.o ctrl_db.o
+explit.o :  damp_db.o kinc_db.o rfdp_db.o sms_db.o nsld_db.o npo_db.o ctrl_db.o
+sms_db.o :  npo_db.o c_input.o param_db.o meshmo_db.o ctrl_db.o
+sxplit.o :  damp_db.o kinc_db.o sms_db.o npo_db.o ctrl_db.o
+dumpin.o :  kinc_db.o sms_db.o gvar_db.o loa_db.o mat_dba.o curv_db.o flc_db.o nsld_db.o c_input.o nsets_db.o meshmo_db.o ctrl_db.o damp_db.o ifx_db.o static_db.o esets_db.o export_db.o param_db.o npo_db.o cms_db.o outp_db.o ift_db.o
+explit.o :  damp_db.o kinc_db.o rfdp_db.o sms_db.o nsld_db.o npo_db.o ctrl_db.o
+sms_db.o :  kinc_db.o npo_db.o c_input.o param_db.o meshmo_db.o ctrl_db.o
+sxplit.o :  damp_db.o kinc_db.o sms_db.o npo_db.o ctrl_db.o
+dumpin.o :  kinc_db.o sms_db.o gvar_db.o loa_db.o mat_dba.o curv_db.o flc_db.o nsld_db.o c_input.o nsets_db.o meshmo_db.o ctrl_db.o damp_db.o ifx_db.o static_db.o esets_db.o export_db.o param_db.o npo_db.o cms_db.o outp_db.o ift_db.o
+lispa0.o :  param_db.o
+defnam.o :  meshmo_db.o c_input.o param_db.o
+runen23.o :  lispa0.o outp_db.o name_db.o
+c_input.o :  lispa0.o gvar_db.o name_db.o param_db.o
+inpd20.o :  gvar_db.o ctrl_db.o ele20_db.o
+elem20.o :  sms_db.o ele20_db.o npo_db.o outp_db.o ctrl_db.o
+ele20_db.o :  mat_dba.o meshmo_db.o c_input.o param_db.o
+cont3_db.o :  lispa0.o esets_db.o npo_db.o c_input.o name_db.o param_db.o surf_db.o ctrl_db.o
+conta3.o :  cont3_db.o gvar_db.o npo_db.o ctrl_db.o
+ele16_db.o :  c_input.o mat_dba.o param_db.o
+elem16.o :  static_db.o sms_db.o npo_db.o ele16_db.o outp_db.o ctrl_db.o
+inpd16.o :  ele16_db.o gvar_db.o
+elemt9.o :  outp_db.o npo_db.o ctrl_db.o ele09_db.o
+inpda9.o :  ctrl_db.o ele09_db.o
+j2sst9.o :  lispa0.o
+ele09_db.o :  c_input.o mat_dba.o param_db.o
+masaux.o :  kinc_db.o npo_db.o
+ubicmx.o :  lispa0.o kinc_db.o
+ensmat.o :  kinc_db.o
+masmtx.o :  kinc_db.o sms_db.o ndp_db.o npo_db.o cms_db.o outp_db.o ctrl_db.o
+renumn.o :  esets_db.o ctrl_db.o
+Inpd04.o :  gvar_db.o ele04_db.o
+ele04_db.o :  c_input.o mat_dba.o param_db.o
+elem04.o :  static_db.o ele04_db.o sms_db.o npo_db.o outp_db.o ctrl_db.o
+elem21.o :  npo_db.o ctrl_db.o ele22_db.o ele21_db.o
+inpd21.o :  curv_db.o ctrl_db.o ele21_db.o c_input.o
+ele21_db.o :  mat_dba.o param_db.o
+corr20.o :  lispa0.o ctrl_db.o mat_dba.o
+mat_dba.o :  flc_db.o c_input.o param_db.o
+corr18.o :  lispa0.o mat_dba.o
+rdflc.o :  flc_db.o vstru_db.o c_input.o param_db.o
+visco20.o :  ctrl_db.o mat_dba.o
+corr18k.o :  lispa0.o mat_dba.o
+corr19.o :  lispa0.o ctrl_db.o mat_dba.o
+core06ps.o :  lispa0.o
+ud_shell_2.o :  lispa0.o mat_dba.o
+ud_solid_3.o :  lispa0.o mat_dba.o
+ud_corr_30.o :  lispa0.o
+wrflc.o :  flc_db.o
+corr17.o :  lispa0.o mat_dba.o
+stre14.o :  mat_dba.o
+corr20_a.o :  mat_dba.o
+elem17.o :  ele17_db.o sms_db.o npo_db.o outp_db.o ctrl_db.o
+inpd17.o :  ele17_db.o ctrl_db.o
+ele17_db.o :  c_input.o meshmo_db.o mat_dba.o param_db.o
+ele10_db.o :  c_input.o mat_dba.o param_db.o
+rigbdc.o :  kinc_db.o npo_db.o ctrl_db.o
+inpd10.o :  ele10_db.o
+elem10.o :  kinc_db.o ele10_db.o npo_db.o outp_db.o ctrl_db.o
+inpd04.o :  ele04_db.o
+ele04_db.o :  c_input.o mat_dba.o param_db.o
+elem04.o :  outp_db.o npo_db.o ctrl_db.o ele04_db.o
+elem25.o :  outp_db.o ele25_db.o npo_db.o ctrl_db.o
+ele25_db.o :  c_input.o kinc_db.o mat_dba.o param_db.o
+inpd25.o :  ele25_db.o
+inpd22.o :  curv_db.o c_input.o ele22_db.o
+ele22_db.o :  mat_dba.o param_db.o
+elem22.o :  outp_db.o npo_db.o ctrl_db.o ele22_db.o
+inpd14.o :  ele14_db.o gvar_db.o
+ele14_db.o :  c_input.o kinc_db.o mat_dba.o param_db.o
+elem14.o :  static_db.o ele14_db.o npo_db.o outp_db.o meshmo_db.o ctrl_db.o
+ele06_db.o :  c_input.o mat_dba.o param_db.o
+inpda6.o :  ele06_db.o ctrl_db.o
+slayer.o :  lispa0.o
+elemt6.o :  outp_db.o ele06_db.o npo_db.o ctrl_db.o
+insidf.o :  kind_param.o
+dbea3d.o :  ctrl_db.o db3_db.o
+rdsegs.o :  surf_db.o c_input.o
+linint.o :  kind_param.o
+linequ.o :  kind_param.o
+db3_db.o :  param_db.o
+zcoord.o :  kind_param.o
+inpd05.o :  ele05_db.o gvar_db.o
+ele05_db.o :  c_input.o mat_dba.o param_db.o
+elem05.o :  static_db.o sms_db.o ele05_db.o npo_db.o outp_db.o ctrl_db.o
+spr_lib.o :  spr_elem_type_db.o spr_type_db.o spr_constants.o
+spr_type_db.o :  spr_elem_type_db.o spr_constants.o
+spr_elem_type_db.o :  spr_constants.o ctrl_db.o
+transf_g.o :  spr_lib.o spr_elem_type_db.o spr_constants.o form_patch_lib.o
+form_patch_lib.o :  lispa0.o spr_elem_type_db.o ctrl_db.o
+conta1.o :  cont1_db.o
+cont1_db.o :  lispa0.o esets_db.o npo_db.o c_input.o name_db.o param_db.o surf_db.o ctrl_db.o
+inpda7.o :  ele07_db.o gvar_db.o ctrl_db.o
+elemt7.o :  ele07_db.o outp_db.o npo_db.o ctrl_db.o
+ele07_db.o :  c_input.o mat_dba.o param_db.o
+cont2_db.o :  lispa0.o esets_db.o npo_db.o c_input.o name_db.o param_db.o surf_db.o ctrl_db.o
+conta2.o :  npo_db.o ctrl_db.o cont2_db.o
+nearsa.o :  ctrl_db.o
+csdata.o :  esets_db.o surf_db.o npo_db.o c_input.o
+remesh.o :  lispa0.o meshmo_db.o
+vertex.o :  ctrl_db.o
+newfix.o :  ifx_db.o c_input.o outp_db.o meshmo_db.o ctrl_db.o
+solrem.o :  damp_db.o kinc_db.o spr_constants.o npo_db.o c_input.o surf_db.o param_db.o name_db.o cms_db.o loa_db.o meshmo_db.o ctrl_db.o
+rmctrln.o :  npo_db.o surf_db.o
+exnods.o :  lispa0.o esets_db.o npo_db.o nsets_db.o param_db.o outp_db.o ctrl_db.o meshmo_db.o ndinf_db.o
+transf1.o :  lispa0.o ctrl_db.o
+fnod_fix.o :  ifx_db.o npo_db.o c_input.o outp_db.o meshmo_db.o ctrl_db.o
+nodfnd.o :  ctrl_db.o
+mshcri.o :  meshmo_db.o
+deloln.o :  lispa0.o esets_db.o nsets_db.o param_db.o ndinf_db.o
+rnmesh.o :  meshmo_db.o ctrl_db.o c_input.o
+rdmeshmo.o :  spr_constants.o npo_db.o c_input.o vstru_db.o param_db.o outp_db.o meshmo_db.o ctrl_db.o vreal_db.o
+get_ifxb.o :  npo_db.o ifx_db.o ctrl_db.o
+dspval.o :  npo_db.o
+plines.o :  meshmo_db.o ifx_db.o
+transf.o :  lispa0.o ctrl_db.o
+pregid.o :  c_input.o name_db.o meshmo_db.o param_db.o
+meshmo_db.o :  ctrl_db.o param_db.o
+elemt1.o :  static_db.o ele01_db.o npo_db.o outp_db.o ctrl_db.o
+inpda1.o :  ele01_db.o
+ele01_db.o :  ele13_db.o c_input.o mat_dba.o param_db.o
+rdtemp.o :  curv_db.o c_input.o nsets_db.o ift_db.o param_db.o
+rdpret.o :  nsets_db.o c_input.o ift_db.o param_db.o
+fsurf_tbc_db.o :  c_input.o
+rdheat.o :  esets_db.o curv_db.o heat_db.o c_input.o ctrl_db.o
+heaini.o :  lispa0.o curv_db.o heat_db.o npo_db.o outp_db.o ctrl_db.o
+heatpl.o :  curv_db.o heat_db.o c_input.o npo_db.o outp_db.o ctrl_db.o
+rdhsur.o :  heat_db.o c_input.o
+tcsurf.o :  curv_db.o npo_db.o heat_db.o ctrl_db.o
+ift_db.o :  ctrl_db.o param_db.o
+rdhedg.o :  heat_db.o c_input.o
+rdfsur.o :  curv_db.o npo_db.o surf_db.o heat_db.o c_input.o ctrl_db.o
+tlmass.o :  outp_db.o npo_db.o ctrl_db.o c_input.o
+texplit.o :  curv_db.o heat_db.o npo_db.o ctrl_db.o ift_db.o
+heat_db.o :  param_db.o
+fixtem.o :  curv_db.o c_input.o ift_db.o
+ele19_db.o :  mat_dba.o npo_db.o c_input.o param_db.o meshmo_db.o ctrl_db.o
+elem19.o :  sms_db.o npo_db.o outp_db.o ele19_db.o ctrl_db.o
+inpd19.o :  ele19_db.o ctrl_db.o
+inpd18.o :  gvar_db.o ele18_db.o
+elem18.o :  static_db.o sms_db.o npo_db.o ele18_db.o outp_db.o ctrl_db.o
+ele18_db.o :  c_input.o mat_dba.o param_db.o
+inpd11.o :  ele11_db.o ctrl_db.o
+ele11_db.o :  c_input.o kinc_db.o mat_dba.o param_db.o
+elem11.o :  ele11_db.o outp_db.o npo_db.o ctrl_db.o
+rdload.o :  esets_db.o curv_db.o npo_db.o c_input.o loa_db.o param_db.o
+wrtfl1.o :  loa_db.o
+rdfoll.o :  npo_db.o surf_db.o c_input.o loa_db.o ctrl_db.o
+wrtfl0.o :  c_input.o loa_db.o
+dsurf0.o :  c_input.o loa_db.o
+waterb_ini.o :  npo_db.o loa_db.o
+hydf_db.o :  line_db.o lispa0.o curv_db.o npo_db.o surf_db.o c_input.o param_db.o ctrl_db.o
+aplfol.o :  loa_db.o
+Loadpl.o :  outp_db.o ctrl_db.o c_input.o
+dedge1.o :  lispa0.o loa_db.o
+loa_db.o :  curv_db.o hydf_db.o param_db.o
+dedge0.o :  c_input.o loa_db.o
+loaini.o :  kinc_db.o lispa0.o curv_db.o npo_db.o loa_db.o outp_db.o ctrl_db.o
+rdhyd2d.o :  c_input.o loa_db.o
+dsurf1.o :  lispa0.o loa_db.o
+loadfl.o :  hydf_db.o npo_db.o ctrl_db.o loa_db.o
