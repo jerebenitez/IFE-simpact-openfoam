@@ -1,0 +1,46 @@
+add_library(cont3 "")
+
+target_link_libraries(cont3
+  PUBLIC
+    mainp./mainp
+    mainp
+)
+
+target_sources(cont3
+  PUBLIC
+    cdump3.inc
+    celmn3.inc
+    celmn3p.inc
+    chckar.inc
+    chksu3.inc
+    chsur3.inc
+    cinpu3.inc
+    coffs3.inc
+    cont3_db.f90
+    conta3.f90
+    creal3.inc
+    crest3.inc
+    cscf3aa.inc
+    cscf3a.inc
+    csdat3.inc
+    csinp3.inc
+    csmas3.inc
+    cspin3.inc
+    csrfc3a.inc
+    csrfc3.inc
+    cupdl3.inc
+    curve3.inc
+    cxctc3.inc
+    force3.inc
+    getno3.inc
+    inpco3.inc
+    mastd3.inc
+    mastda.inc
+    mdsur3.inc
+    nears3.inc
+    projt3.inc
+    projtr.inc
+    prsur3.inc
+    surms3.inc
+    upndc3.inc
+)

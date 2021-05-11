@@ -1,0 +1,50 @@
+add_library(drawb "")
+
+target_link_libraries(drawb
+  PUBLIC
+    mainp./mainp
+)
+
+target_sources(drawb
+  PUBLIC
+    alloc_db3.inc
+    chnums.inc
+    chqua0.inc
+    chquad.inc
+    compar.inc
+    countn.inc
+    counts.inc
+    db3con.inc
+    db3_db.f90
+    db3dmp.inc
+    db3for.inc
+    db3ini.inc
+    db3inp.inc
+    db3lin.inc
+    db3res.inc
+    db3sc0.inc
+    db3udl.inc
+    dbea3d.f90
+    dbsol3.inc
+    inidb0a.inc
+    inidb0.inc
+    inidb1.inc
+    inidb2.inc
+    inidb3.inc
+    inidb4.inc
+    insidf.f90
+    linequ.f90
+    linint.f90
+    linksd.inc
+    prdbln.inc
+    proje3.inc
+    projec.inc
+    qshfun.inc
+    quadin.inc
+    rdsegs.f90
+    rsdbe3.inc
+    updnd3.inc
+    wrtdb1.inc
+    wrtdb2.inc
+    zcoord.f90
+)

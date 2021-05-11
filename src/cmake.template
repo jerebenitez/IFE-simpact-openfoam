@@ -9,15 +9,15 @@ add_subdirectory({{ subdir }})
 {% if link_libraries %}
 target_link_libraries({{ lib_name }}
   PUBLIC
-    {% for ll in link_libraries %}
-      {{ ll }}
-    {% endfor %}
+  {% for ll in link_libraries %}
+    {{ ll }}
+  {% endfor %}
 )
 {% endif %}
 
 target_sources({{ lib_name }}
   PUBLIC
-    {% for s in sources %}
-      {{ s }}
-    {% endfor %}
+  {% for s in sources %}
+    {{ s }}
+  {% endfor %}
 )

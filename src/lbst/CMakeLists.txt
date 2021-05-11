@@ -1,0 +1,46 @@
+add_library(lbst "")
+
+target_link_libraries(lbst
+  PUBLIC
+    mainp./mainp
+)
+
+target_sources(lbst
+  PUBLIC
+    acvd14.inc
+    axep14.inc
+    bfle14.inc
+    bmem14.f90
+    boun14.inc
+    comm14.inc
+    delt14.inc
+    dump14.inc
+    ele14_db.f90
+    elem14.f90
+    elmd14.inc
+    expo14.inc
+    gaus14.inc
+    gentbs.f90
+    impo14.inc
+    inig14.inc
+    inpd14.f90
+    lgst14.f90
+    luma14.inc
+    mase14.inc
+    nods14.inc
+    outd14.inc
+    projq4.f90
+    rest14.inc
+    resv14.inc
+    resv_p0.f90
+    resv_p1.f90
+    resv_p2.f90
+    resv_p3.f90
+    secd14.inc
+    slum14.inc
+    stra14.inc
+    stst14.inc
+    surf14.inc
+    toar14.inc
+    updl14.inc
+)

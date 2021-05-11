@@ -1,0 +1,43 @@
+add_library(ttr2d "")
+
+target_link_libraries(ttr2d
+  PUBLIC
+    mainp
+)
+
+target_sources(ttr2d
+  PUBLIC
+    acvd19.inc
+    axep19.inc
+    bmat19.inc
+    boun19.inc
+    cdac19.inc
+    comm19.inc
+    delt19.inc
+    dist19.inc
+    dump19.inc
+    ele19_db.f90
+    elem19.f90
+    elmd19.inc
+    gaus19.inc
+    getv19.inc
+    inpd19.f90
+    luma19.inc
+    mase19.inc
+    nods19.inc
+    outd19.inc
+    real19.inc
+    rest19.inc
+    resv19.inc
+    slnd19.inc
+    smog19.inc
+    smom19.inc
+    smth19.inc
+    stra19.inc
+    surf19.inc
+    tdel19.inc
+    tlma19.inc
+    toar19.inc
+    tres19.inc
+    updl19.inc
+)

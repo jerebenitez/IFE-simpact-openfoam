@@ -1,0 +1,40 @@
+add_library(solag "")
+
+target_link_libraries(solag
+  PUBLIC
+    mainp./mainp
+)
+
+target_sources(solag
+  PUBLIC
+    acvd18.inc
+    bmat18.inc
+    bsma18.inc
+    comm18.inc
+    delt18.inc
+    dump18.inc
+    eige18.inc
+    ele18_db.f90
+    elem18.f90
+    elmd18.inc
+    expo18.inc
+    gaus18.inc
+    impo18.inc
+    inpd18.f90
+    lcas18.inc
+    lgst18.inc
+    luma18.inc
+    mase18.inc
+    masm18.inc
+    nods18.inc
+    outd18.inc
+    rest18.inc
+    resv18.inc
+    rubber3d.inc
+    rubber3dn.inc
+    secd18.inc
+    slno18.inc
+    slum18.inc
+    surf18.inc
+    updl18.inc
+)

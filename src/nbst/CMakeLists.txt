@@ -1,0 +1,40 @@
+add_library(nbst "")
+
+target_link_libraries(nbst
+  PUBLIC
+    mainp./mainp
+)
+
+target_sources(nbst
+  PUBLIC
+    acvd13.inc
+    axep13.inc
+    bbra13.inc
+    bfle13.inc
+    bmem13.inc
+    boun13.inc
+    bran13.inc
+    comm13.inc
+    delt13.inc
+    dump13.inc
+    ele13_db.f90
+    elem13.f90
+    elmd13.inc
+    expo13.inc
+    gaus13.inc
+    impo13.inc
+    inig13.inc
+    inpd13.f90
+    luma13.inc
+    mase13.inc
+    nods13.inc
+    outd13.inc
+    rest13.inc
+    resv13.inc
+    secd13.inc
+    slum13.inc
+    stra13.inc
+    surf13.inc
+    toar13.inc
+    updl13.inc
+)

@@ -1,0 +1,56 @@
+add_library(matdb "")
+
+
+target_sources(matdb
+  PUBLIC
+    cohill.inc
+    conv_smeas.inc
+    core06ps.f90
+    corr05.f90
+    corr17.f90
+    corr18.f90
+    corr18k.f90
+    corr19.f90
+    corr20_a.f90
+    corr20.f90
+    corr20_i.f90
+    curaux.inc
+    flc_db.f90
+    isoha14.f90
+    mat_dba.f90
+    mat_ela.inc
+    mat_inp.inc
+    mat_pla.inc
+    minp_01.inc
+    minp_04.inc
+    minp_05.inc
+    minp_06.inc
+    minp_08.inc
+    minp_20.inc
+    minp_30.inc
+    mtype_c.inc
+    posin1.f90
+    rdflc.f90
+    rdmpcr.inc
+    rubber1d.f90
+    rubber2d.f90
+    rubberps.f90
+    sc_beam.inc
+    sc_shel2.inc
+    sc_shel3.inc
+    sc_shel4.inc
+    sc_shel5.inc
+    sc_shre1.inc
+    sc_solid.inc
+    sc_solsh.inc
+    sc_spot.inc
+    sc_truss.inc
+    stre14.f90
+    ud_corr_30.f90
+    ud_sh2_out.f90
+    ud_shell_2.f90
+    ud_solid_3.f90
+    visco20.f90
+    wrflc.f90
+    wrt_mat_db.inc
+)

@@ -1,0 +1,43 @@
+add_library(cont2 "")
+
+target_link_libraries(cont2
+  PUBLIC
+    mainp
+)
+
+target_sources(cont2
+  PUBLIC
+    ccheck2.inc
+    cdump2.inc
+    celmn2.inc
+    celmn2p.inc
+    chksu2.inc
+    chsur2.inc
+    cinpu2.inc
+    coffs2.inc
+    cont2_db.f90
+    conta2.f90
+    crest2.inc
+    cscf2aa.inc
+    cscf2a.inc
+    csdat2.inc
+    csdata.f90
+    csinp2.inc
+    cspin2.inc
+    csrfc2a.inc
+    csrfc2.inc
+    cupdl2.inc
+    curve2.inc
+    cxctc2.inc
+    force2.inc
+    getnod.f90
+    inpco2.inc
+    mastd2.inc
+    mastdb.inc
+    nearsa.f90
+    nearst.inc
+    projt2.inc
+    prsur2.inc
+    surms2.inc
+    upndc2.inc
+)

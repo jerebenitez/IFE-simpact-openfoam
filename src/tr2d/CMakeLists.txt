@@ -1,0 +1,44 @@
+add_library(tr2d "")
+
+target_link_libraries(tr2d
+  PUBLIC
+    mainp./mainp
+    mainp
+)
+
+target_sources(tr2d
+  PUBLIC
+    acvd20.inc
+    axep20.inc
+    bmat20.inc
+    boun20.inc
+    cdac20.inc
+    comm20.inc
+    delt20.inc
+    dist20.inc
+    dump20.inc
+    ele20_db.f90
+    elem20.f90
+    elmd20.inc
+    expo20.inc
+    gaus20.inc
+    getelv20.inc
+    impo20.inc
+    inpd20.f90
+    luma20.inc
+    mase20.inc
+    nods20.inc
+    outd20.inc
+    real20.inc
+    rest20.inc
+    resv20.inc
+    secd20.inc
+    slnods20.inc
+    smog20.inc
+    smom20.inc
+    smth20.inc
+    stra20.inc
+    surf20.inc
+    toar20.inc
+    updl20.inc
+)

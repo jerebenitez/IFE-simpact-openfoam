@@ -1,0 +1,55 @@
+add_library(shelt "")
+
+target_link_libraries(shelt
+  PUBLIC
+    mainp./mainp
+    mainp
+)
+
+target_sources(shelt
+  PUBLIC
+    acvdf7.inc
+    ap1tm7.inc
+    asstr7.inc
+    Axep07.inc
+    bmat07.inc
+    bmatx7.inc
+    bmmt27.inc
+    bmmt37.inc
+    bshe07.inc
+    bshem7.inc
+    codel7.inc
+    commv7.inc
+    comp_ang07.inc
+    comp_angl7.inc
+    concar.f90
+    deriv6.inc
+    dump07.inc
+    ele07_db.f90
+    elemt7.f90
+    elmda7.inc
+    expo07.inc
+    gauss7.inc
+    impo07.inc
+    inpda7.f90
+    intem7.inc
+    intr07.inc
+    intrf7.inc
+    lumas7.inc
+    masel7.inc
+    nodn07.f90
+    nods07.inc
+    nodxy7.inc
+    outdy7.inc
+    rest07.inc
+    resvp7.inc
+    secd07.inc
+    setg07.inc
+    setga7.inc
+    shape7.f90
+    stra07.inc
+    stran7.inc
+    surf07.inc
+    toar07.inc
+    updlo7.inc
+)

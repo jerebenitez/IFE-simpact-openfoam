@@ -1,0 +1,46 @@
+add_library(shelq "")
+
+target_link_libraries(shelq
+  PUBLIC
+    input
+)
+
+target_sources(shelq
+  PUBLIC
+    acvdf6.inc
+    angeul.f90
+    asstr6.inc
+    bmatx6.inc
+    bshem6.inc
+    codel6.inc
+    commv6.inc
+    comp_ang06.inc
+    deriv6.f90
+    dump06.inc
+    ele06_db.f90
+    elemt6.f90
+    elmda6.inc
+    gauss6.inc
+    inpda6.f90
+    intrf6.inc
+    istgp6.f90
+    j2auxi.f90
+    lcasy6.f90
+    lumas6.inc
+    masel6.inc
+    nodnor.f90
+    norelm.f90
+    outdy6.inc
+    psib06.inc
+    radre6.f90
+    rest06.inc
+    resvp6.inc
+    scater.f90
+    setga6.inc
+    shape2.f90
+    slayer.f90
+    stgp06.f90
+    stran6.inc
+    surf06.inc
+    updlo6.inc
+)

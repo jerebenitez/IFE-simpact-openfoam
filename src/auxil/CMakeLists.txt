@@ -1,0 +1,48 @@
+add_library(auxil "")
+
+target_link_libraries(auxil
+  PUBLIC
+    mainp
+)
+
+target_sources(auxil
+  PUBLIC
+    close1.f90
+    compare_faces.f90
+    det2.f90
+    ensmal.f90
+    ensvec.f90
+    gaussq.f90
+    inc_mint.f90
+    inc_mrea.f90
+    inc_vboo.f90
+    inc_vcha.f90
+    inc_vint.f90
+    inc_vrea.f90
+    inttoch.f90
+    invmtx.f90
+    jacob3.f90
+    jacob5.f90
+    lumas5.f90
+    nonear.f90
+    number.f90
+    princi.f90
+    proma1.f90
+    proma2.f90
+    proma3.f90
+    proma4.f90
+    rembln.f90
+    shape1.f90
+    shape3.f90
+    shape4.f90
+    shape5.f90
+    sortnd.f90
+    surf03.f90
+    surf05.f90
+    vecasi.f90
+    vecpro.f90
+    vecuni.f90
+    vreal_db.f90
+    vstrg_db.f90
+    vstru_db.f90
+)

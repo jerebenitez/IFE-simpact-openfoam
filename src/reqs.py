@@ -1,8 +1,5 @@
-import re
-import json
-import argparse, sys
+import os, re, json, argparse, sys, jinja2
 from subprocess import Popen, PIPE
-import jinja2
 
 
 def trail(filename):
@@ -50,14 +47,19 @@ def print_cmake(struc):
   template = templateEnv.get_template(TEMPLATE_FILE)
 
   for lib in struct:
+    fullpath = os.path.join(lib["name"], "CMakeLists.txt")
+
     outputText = template.render(
       lib_name=lib["name"],
       sources=lib["files"],
       subdirectories=[x["name"] for x in lib["directories"]],
-      link_libraries=lib["deps"]
+      link_libraries=[ x for x in lib["deps"] if x != lib["name"]]
     )
-    print(outputText)
 
+    with open(fullpath, "w") as f:
+      print("Escribiendo {}".format(fullpath))
+      f.write(outputText)
+    
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()

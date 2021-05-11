@@ -1,0 +1,43 @@
+add_library(tlbst "")
+
+target_link_libraries(tlbst
+  PUBLIC
+    mainp./mainp
+)
+
+target_sources(tlbst
+  PUBLIC
+    acvd24.inc
+    axep24.inc
+    bbra24.inc
+    bfle24.inc
+    bmem24.inc
+    boun24.inc
+    bran24.inc
+    code24.inc
+    comm24.inc
+    delt24.inc
+    dump24.inc
+    ele24_db.f90
+    elem24.f90
+    elmd24.inc
+    expo24.inc
+    gaus24.inc
+    impo24.inc
+    inig24.inc
+    inpd24.f90
+    luma24.inc
+    mase24.inc
+    nods24.inc
+    outd24.inc
+    rest24.inc
+    resv24.inc
+    secd24.inc
+    slum24.inc
+    stra24.inc
+    surf24.inc
+    tlma24.inc
+    toar24.inc
+    tres24.inc
+    updl24.inc
+)
