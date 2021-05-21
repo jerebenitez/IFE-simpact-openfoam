@@ -1,16 +1,23 @@
 # del 2019/09/05 al 2019/09/12
 ## Jere:
-* compilar la versión que tenga de Simpact en Linux
-    * usar el compilador de fortran (si es que consigue bajar una versión gratuita)
-    * hacerlo con un *buen* makefile
-    * donde *buen* significa
+1. compilar la versión que tenga de Simpact en Linux
+    1. usar el compilador de ~fortran~ intel? (si es que consigue bajar una versión gratuita)
+    2. hacerlo con un *buen* makefile
+    3. donde *buen* significa
         * que acepte argumentos
         * que con los argumentos compile distintas *configuraciones*
         * que guarde los archivos compilados de esas *configuraciones* en una estructura de directorios adecuada
         * que use la menor cantidad de opciones de compilación posible
         * que esté bien comentado (en inglés, si es posible)
-* probar la versión serial compilada
-* ver qué herramienta usar para hacer debugging
+2. probar la versión serial compilada
+3. ver qué herramienta usar para hacer debugging
+
+### Notas
+1. 1. Al momento de investigar, la versión gratuita de ifort que se podía conseguir, era sólo si se estaba trabajando en un proyecto open source. No creo que intel vaya a cambiar eso, pero no es algo que se pueda asegurar a futuro.
+    2. Se decidió usar **cmake** para generar el makefile en vez de hacerlo "a mano". Esta última opción hacía que el makefile fuese muy complicado de mantener. Queda ver cómo pasarle los parámetros necesarios (más específicamente, qué parámetros pasarle, el cómo viene dado por cmake).
+2. _En proceso_
+3. Para debugging se puede usar gdb directamente si se tolera debugguear en la terminal :P
+
 ## Mauro:
 * pasar en limpio actividades <- **done**
 * incorporar al Luis en el repositorio <- **¿puedo hacerlo yo? lo intenté y no me salió**
