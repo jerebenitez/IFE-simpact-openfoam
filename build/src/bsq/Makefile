@@ -129,6 +129,102 @@ depend:
 	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/bsq/CMakeFiles/bsq.dir/rule:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/bsq/CMakeFiles/bsq.dir/rule
+.PHONY : src/bsq/CMakeFiles/bsq.dir/rule
+
+# Convenience name for target.
+bsq: src/bsq/CMakeFiles/bsq.dir/rule
+
+.PHONY : bsq
+
+# fast build rule for target.
+bsq/fast:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/build
+.PHONY : bsq/fast
+
+ele25_db.o: ele25_db.f90.o
+
+.PHONY : ele25_db.o
+
+# target to build an object file
+ele25_db.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/ele25_db.f90.o
+.PHONY : ele25_db.f90.o
+
+ele25_db.i: ele25_db.f90.i
+
+.PHONY : ele25_db.i
+
+# target to preprocess a source file
+ele25_db.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/ele25_db.f90.i
+.PHONY : ele25_db.f90.i
+
+ele25_db.s: ele25_db.f90.s
+
+.PHONY : ele25_db.s
+
+# target to generate assembly for a file
+ele25_db.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/ele25_db.f90.s
+.PHONY : ele25_db.f90.s
+
+elem25.o: elem25.f90.o
+
+.PHONY : elem25.o
+
+# target to build an object file
+elem25.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/elem25.f90.o
+.PHONY : elem25.f90.o
+
+elem25.i: elem25.f90.i
+
+.PHONY : elem25.i
+
+# target to preprocess a source file
+elem25.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/elem25.f90.i
+.PHONY : elem25.f90.i
+
+elem25.s: elem25.f90.s
+
+.PHONY : elem25.s
+
+# target to generate assembly for a file
+elem25.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/elem25.f90.s
+.PHONY : elem25.f90.s
+
+inpd25.o: inpd25.f90.o
+
+.PHONY : inpd25.o
+
+# target to build an object file
+inpd25.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/inpd25.f90.o
+.PHONY : inpd25.f90.o
+
+inpd25.i: inpd25.f90.i
+
+.PHONY : inpd25.i
+
+# target to preprocess a source file
+inpd25.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/inpd25.f90.i
+.PHONY : inpd25.f90.i
+
+inpd25.s: inpd25.f90.s
+
+.PHONY : inpd25.s
+
+# target to generate assembly for a file
+inpd25.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/inpd25.f90.s
+.PHONY : inpd25.f90.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +233,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... bsq"
+	@echo "... ele25_db.o"
+	@echo "... ele25_db.i"
+	@echo "... ele25_db.s"
+	@echo "... elem25.o"
+	@echo "... elem25.i"
+	@echo "... elem25.s"
+	@echo "... inpd25.o"
+	@echo "... inpd25.i"
+	@echo "... inpd25.s"
 .PHONY : help
 
 

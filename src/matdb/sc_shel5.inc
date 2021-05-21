@@ -364,11 +364,11 @@
 
  var1%type = 2
  var1%dim = 2
- var1%name(:) = (/ 'Phi_Moment','Phi_Mxx','Phi_Myy','Phi_Mxy','Phi_Myx',' ',' ' /)
+ var1%name(:) = (/ 'Phi_Moment','Phi_Mxx   ','Phi_Myy   ','Phi_Mxy   ','Phi_Myx   ','          ','          ' /)
 
  var2%type = 1
  var2%dim = 2
- var2%name(:) = (/ 'Phi_Shear','Phi_Shear_X','Phi_Shear_y',' ',' ',' ',' ' /)
+ var2%name(:) = (/ 'Phi_Shear  ','Phi_Shear_X','Phi_Shear_y','           ','           ','           ','           ' /)
 
  sec%postp => var1   !keep pointer to first variable
  var1%next => var2

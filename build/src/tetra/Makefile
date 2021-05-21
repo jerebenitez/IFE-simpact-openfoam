@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/jerebenitez/fort/IFE-simpact-openfoam/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -96,6 +85,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -129,6 +129,102 @@ depend:
 	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/tetra/CMakeFiles/tetra.dir/rule:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tetra/CMakeFiles/tetra.dir/rule
+.PHONY : src/tetra/CMakeFiles/tetra.dir/rule
+
+# Convenience name for target.
+tetra: src/tetra/CMakeFiles/tetra.dir/rule
+
+.PHONY : tetra
+
+# fast build rule for target.
+tetra/fast:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/build
+.PHONY : tetra/fast
+
+ele04_db.o: ele04_db.f90.o
+
+.PHONY : ele04_db.o
+
+# target to build an object file
+ele04_db.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/ele04_db.f90.o
+.PHONY : ele04_db.f90.o
+
+ele04_db.i: ele04_db.f90.i
+
+.PHONY : ele04_db.i
+
+# target to preprocess a source file
+ele04_db.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/ele04_db.f90.i
+.PHONY : ele04_db.f90.i
+
+ele04_db.s: ele04_db.f90.s
+
+.PHONY : ele04_db.s
+
+# target to generate assembly for a file
+ele04_db.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/ele04_db.f90.s
+.PHONY : ele04_db.f90.s
+
+elem04.o: elem04.f90.o
+
+.PHONY : elem04.o
+
+# target to build an object file
+elem04.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/elem04.f90.o
+.PHONY : elem04.f90.o
+
+elem04.i: elem04.f90.i
+
+.PHONY : elem04.i
+
+# target to preprocess a source file
+elem04.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/elem04.f90.i
+.PHONY : elem04.f90.i
+
+elem04.s: elem04.f90.s
+
+.PHONY : elem04.s
+
+# target to generate assembly for a file
+elem04.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/elem04.f90.s
+.PHONY : elem04.f90.s
+
+inpd04.o: inpd04.f90.o
+
+.PHONY : inpd04.o
+
+# target to build an object file
+inpd04.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/inpd04.f90.o
+.PHONY : inpd04.f90.o
+
+inpd04.i: inpd04.f90.i
+
+.PHONY : inpd04.i
+
+# target to preprocess a source file
+inpd04.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/inpd04.f90.i
+.PHONY : inpd04.f90.i
+
+inpd04.s: inpd04.f90.s
+
+.PHONY : inpd04.s
+
+# target to generate assembly for a file
+inpd04.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/inpd04.f90.s
+.PHONY : inpd04.f90.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +233,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tetra"
+	@echo "... ele04_db.o"
+	@echo "... ele04_db.i"
+	@echo "... ele04_db.s"
+	@echo "... elem04.o"
+	@echo "... elem04.i"
+	@echo "... elem04.s"
+	@echo "... inpd04.o"
+	@echo "... inpd04.i"
+	@echo "... inpd04.s"
 .PHONY : help
 
 

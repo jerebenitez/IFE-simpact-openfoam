@@ -1,6 +1,85 @@
 add_library(inclu "")
 
+target_link_libraries(inclu
+  PUBLIC
+    input
+    mainp
+)
 
 target_sources(inclu
   PUBLIC
+    actrot.h
+    angeul.h
+    byebye.h
+    closef.h
+    colsol.h
+    contac.h
+    coords.h
+    core06ps.h
+    corr05.h
+    corr14_79.h
+    corr14_90.h
+    corr14.h
+    corr17.h
+    corr18.h
+    corr18k.h
+    corr19.h
+    corr20_a.h
+    corr20.h
+    csdata.h
+    dbea3d.h
+    deriv6.h
+    elemnt.h
+    ensmal.h
+    ensvec.h
+    fixtem.h
+    gaussq.h
+    gentbs.h
+    getnod.h
+    inc_mint.h
+    inc_mrea.h
+    inc_vboo.h
+    inc_vcha.h
+    inc_vint.h
+    inc_vrea.h
+    inrotm.h
+    lcasy6.h
+    lgst18.h
+    lumas3.h
+    lumas5.h
+    lump_mass.h
+    mase22.h
+    nearsa.h
+    nodn07.h
+    nodnor.h
+    nonear.h
+    outdyn.h
+    rdhyd2d.h
+    rdreal.h
+    rdsegs.h
+    reduce_mass.h
+    rsdbe3.h
+    rubber2d.h
+    rubber3d.h
+    rubberps.h
+    shape9.h
+    sortnd.h
+    stgp06.h
+    stra14.h
+    stre02_1.h
+    stre02_6.h
+    stre14.h
+    surf03.h
+    surf05.h
+    sxplit.h
+    transf_g.h
+    ubicmx.h
+    ud_sh2_out.h
+    ud_shell_2.h
+    ud_solid_3.h
+    updnd3.h
+    vecpro.h
+    vecuni.h
+    visco20.h
+    wrtrpt.h
 )

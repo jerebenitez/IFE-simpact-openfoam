@@ -129,6 +129,526 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named auxil
+
+# Build rule for target.
+auxil: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auxil
+.PHONY : auxil
+
+# fast build rule for target.
+auxil/fast:
+	$(MAKE) $(MAKESILENT) -f src/auxil/CMakeFiles/auxil.dir/build.make src/auxil/CMakeFiles/auxil.dir/build
+.PHONY : auxil/fast
+
+#=============================================================================
+# Target rules for targets named beam2
+
+# Build rule for target.
+beam2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 beam2
+.PHONY : beam2
+
+# fast build rule for target.
+beam2/fast:
+	$(MAKE) $(MAKESILENT) -f src/beam2/CMakeFiles/beam2.dir/build.make src/beam2/CMakeFiles/beam2.dir/build
+.PHONY : beam2/fast
+
+#=============================================================================
+# Target rules for targets named beame
+
+# Build rule for target.
+beame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 beame
+.PHONY : beame
+
+# fast build rule for target.
+beame/fast:
+	$(MAKE) $(MAKESILENT) -f src/beame/CMakeFiles/beame.dir/build.make src/beame/CMakeFiles/beame.dir/build
+.PHONY : beame/fast
+
+#=============================================================================
+# Target rules for targets named old
+
+# Build rule for target.
+old: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 old
+.PHONY : old
+
+# fast build rule for target.
+old/fast:
+	$(MAKE) $(MAKESILENT) -f src/beame/old/CMakeFiles/old.dir/build.make src/beame/old/CMakeFiles/old.dir/build
+.PHONY : old/fast
+
+#=============================================================================
+# Target rules for targets named bsq
+
+# Build rule for target.
+bsq: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bsq
+.PHONY : bsq
+
+# fast build rule for target.
+bsq/fast:
+	$(MAKE) $(MAKESILENT) -f src/bsq/CMakeFiles/bsq.dir/build.make src/bsq/CMakeFiles/bsq.dir/build
+.PHONY : bsq/fast
+
+#=============================================================================
+# Target rules for targets named cont1
+
+# Build rule for target.
+cont1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cont1
+.PHONY : cont1
+
+# fast build rule for target.
+cont1/fast:
+	$(MAKE) $(MAKESILENT) -f src/cont1/CMakeFiles/cont1.dir/build.make src/cont1/CMakeFiles/cont1.dir/build
+.PHONY : cont1/fast
+
+#=============================================================================
+# Target rules for targets named cont2
+
+# Build rule for target.
+cont2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cont2
+.PHONY : cont2
+
+# fast build rule for target.
+cont2/fast:
+	$(MAKE) $(MAKESILENT) -f src/cont2/CMakeFiles/cont2.dir/build.make src/cont2/CMakeFiles/cont2.dir/build
+.PHONY : cont2/fast
+
+#=============================================================================
+# Target rules for targets named cont3
+
+# Build rule for target.
+cont3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cont3
+.PHONY : cont3
+
+# fast build rule for target.
+cont3/fast:
+	$(MAKE) $(MAKESILENT) -f src/cont3/CMakeFiles/cont3.dir/build.make src/cont3/CMakeFiles/cont3.dir/build
+.PHONY : cont3/fast
+
+#=============================================================================
+# Target rules for targets named drawb
+
+# Build rule for target.
+drawb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drawb
+.PHONY : drawb
+
+# fast build rule for target.
+drawb/fast:
+	$(MAKE) $(MAKESILENT) -f src/drawb/CMakeFiles/drawb.dir/build.make src/drawb/CMakeFiles/drawb.dir/build
+.PHONY : drawb/fast
+
+#=============================================================================
+# Target rules for targets named ele21
+
+# Build rule for target.
+ele21: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ele21
+.PHONY : ele21
+
+# fast build rule for target.
+ele21/fast:
+	$(MAKE) $(MAKESILENT) -f src/ele21/CMakeFiles/ele21.dir/build.make src/ele21/CMakeFiles/ele21.dir/build
+.PHONY : ele21/fast
+
+#=============================================================================
+# Target rules for targets named ele22
+
+# Build rule for target.
+ele22: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ele22
+.PHONY : ele22
+
+# fast build rule for target.
+ele22/fast:
+	$(MAKE) $(MAKESILENT) -f src/ele22/CMakeFiles/ele22.dir/build.make src/ele22/CMakeFiles/ele22.dir/build
+.PHONY : ele22/fast
+
+#=============================================================================
+# Target rules for targets named inclu
+
+# Build rule for target.
+inclu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inclu
+.PHONY : inclu
+
+# fast build rule for target.
+inclu/fast:
+	$(MAKE) $(MAKESILENT) -f src/inclu/CMakeFiles/inclu.dir/build.make src/inclu/CMakeFiles/inclu.dir/build
+.PHONY : inclu/fast
+
+#=============================================================================
+# Target rules for targets named input
+
+# Build rule for target.
+input: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 input
+.PHONY : input
+
+# fast build rule for target.
+input/fast:
+	$(MAKE) $(MAKESILENT) -f src/input/CMakeFiles/input.dir/build.make src/input/CMakeFiles/input.dir/build
+.PHONY : input/fast
+
+#=============================================================================
+# Target rules for targets named lbst
+
+# Build rule for target.
+lbst: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lbst
+.PHONY : lbst
+
+# fast build rule for target.
+lbst/fast:
+	$(MAKE) $(MAKESILENT) -f src/lbst/CMakeFiles/lbst.dir/build.make src/lbst/CMakeFiles/lbst.dir/build
+.PHONY : lbst/fast
+
+#=============================================================================
+# Target rules for targets named loads
+
+# Build rule for target.
+loads: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loads
+.PHONY : loads
+
+# fast build rule for target.
+loads/fast:
+	$(MAKE) $(MAKESILENT) -f src/loads/CMakeFiles/loads.dir/build.make src/loads/CMakeFiles/loads.dir/build
+.PHONY : loads/fast
+
+#=============================================================================
+# Target rules for targets named mainp
+
+# Build rule for target.
+mainp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mainp
+.PHONY : mainp
+
+# fast build rule for target.
+mainp/fast:
+	$(MAKE) $(MAKESILENT) -f src/mainp/CMakeFiles/mainp.dir/build.make src/mainp/CMakeFiles/mainp.dir/build
+.PHONY : mainp/fast
+
+#=============================================================================
+# Target rules for targets named bak
+
+# Build rule for target.
+bak: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bak
+.PHONY : bak
+
+# fast build rule for target.
+bak/fast:
+	$(MAKE) $(MAKESILENT) -f src/mainp/bak/CMakeFiles/bak.dir/build.make src/mainp/bak/CMakeFiles/bak.dir/build
+.PHONY : bak/fast
+
+#=============================================================================
+# Target rules for targets named new
+
+# Build rule for target.
+new: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new
+.PHONY : new
+
+# fast build rule for target.
+new/fast:
+	$(MAKE) $(MAKESILENT) -f src/mainp/new/CMakeFiles/new.dir/build.make src/mainp/new/CMakeFiles/new.dir/build
+.PHONY : new/fast
+
+#=============================================================================
+# Target rules for targets named matdb
+
+# Build rule for target.
+matdb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matdb
+.PHONY : matdb
+
+# fast build rule for target.
+matdb/fast:
+	$(MAKE) $(MAKESILENT) -f src/matdb/CMakeFiles/matdb.dir/build.make src/matdb/CMakeFiles/matdb.dir/build
+.PHONY : matdb/fast
+
+#=============================================================================
+# Target rules for targets named nbst
+
+# Build rule for target.
+nbst: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nbst
+.PHONY : nbst
+
+# fast build rule for target.
+nbst/fast:
+	$(MAKE) $(MAKESILENT) -f src/nbst/CMakeFiles/nbst.dir/build.make src/nbst/CMakeFiles/nbst.dir/build
+.PHONY : nbst/fast
+
+#=============================================================================
+# Target rules for targets named prism
+
+# Build rule for target.
+prism: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prism
+.PHONY : prism
+
+# fast build rule for target.
+prism/fast:
+	$(MAKE) $(MAKESILENT) -f src/prism/CMakeFiles/prism.dir/build.make src/prism/CMakeFiles/prism.dir/build
+.PHONY : prism/fast
+
+#=============================================================================
+# Target rules for targets named quadl
+
+# Build rule for target.
+quadl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadl
+.PHONY : quadl
+
+# fast build rule for target.
+quadl/fast:
+	$(MAKE) $(MAKESILENT) -f src/quadl/CMakeFiles/quadl.dir/build.make src/quadl/CMakeFiles/quadl.dir/build
+.PHONY : quadl/fast
+
+#=============================================================================
+# Target rules for targets named rbst
+
+# Build rule for target.
+rbst: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rbst
+.PHONY : rbst
+
+# fast build rule for target.
+rbst/fast:
+	$(MAKE) $(MAKESILENT) -f src/rbst/CMakeFiles/rbst.dir/build.make src/rbst/CMakeFiles/rbst.dir/build
+.PHONY : rbst/fast
+
+#=============================================================================
+# Target rules for targets named remesh
+
+# Build rule for target.
+remesh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 remesh
+.PHONY : remesh
+
+# fast build rule for target.
+remesh/fast:
+	$(MAKE) $(MAKESILENT) -f src/remesh/CMakeFiles/remesh.dir/build.make src/remesh/CMakeFiles/remesh.dir/build
+.PHONY : remesh/fast
+
+#=============================================================================
+# Target rules for targets named rigid
+
+# Build rule for target.
+rigid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rigid
+.PHONY : rigid
+
+# fast build rule for target.
+rigid/fast:
+	$(MAKE) $(MAKESILENT) -f src/rigid/CMakeFiles/rigid.dir/build.make src/rigid/CMakeFiles/rigid.dir/build
+.PHONY : rigid/fast
+
+#=============================================================================
+# Target rules for targets named scpr03
+
+# Build rule for target.
+scpr03: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scpr03
+.PHONY : scpr03
+
+# fast build rule for target.
+scpr03/fast:
+	$(MAKE) $(MAKESILENT) -f src/scpr03/CMakeFiles/scpr03.dir/build.make src/scpr03/CMakeFiles/scpr03.dir/build
+.PHONY : scpr03/fast
+
+#=============================================================================
+# Target rules for targets named shelq
+
+# Build rule for target.
+shelq: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shelq
+.PHONY : shelq
+
+# fast build rule for target.
+shelq/fast:
+	$(MAKE) $(MAKESILENT) -f src/shelq/CMakeFiles/shelq.dir/build.make src/shelq/CMakeFiles/shelq.dir/build
+.PHONY : shelq/fast
+
+#=============================================================================
+# Target rules for targets named shelt
+
+# Build rule for target.
+shelt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shelt
+.PHONY : shelt
+
+# fast build rule for target.
+shelt/fast:
+	$(MAKE) $(MAKESILENT) -f src/shelt/CMakeFiles/shelt.dir/build.make src/shelt/CMakeFiles/shelt.dir/build
+.PHONY : shelt/fast
+
+#=============================================================================
+# Target rules for targets named shrev
+
+# Build rule for target.
+shrev: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shrev
+.PHONY : shrev
+
+# fast build rule for target.
+shrev/fast:
+	$(MAKE) $(MAKESILENT) -f src/shrev/CMakeFiles/shrev.dir/build.make src/shrev/CMakeFiles/shrev.dir/build
+.PHONY : shrev/fast
+
+#=============================================================================
+# Target rules for targets named solag
+
+# Build rule for target.
+solag: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solag
+.PHONY : solag
+
+# fast build rule for target.
+solag/fast:
+	$(MAKE) $(MAKESILENT) -f src/solag/CMakeFiles/solag.dir/build.make src/solag/CMakeFiles/solag.dir/build
+.PHONY : solag/fast
+
+#=============================================================================
+# Target rules for targets named solve
+
+# Build rule for target.
+solve: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solve
+.PHONY : solve
+
+# fast build rule for target.
+solve/fast:
+	$(MAKE) $(MAKESILENT) -f src/solve/CMakeFiles/solve.dir/build.make src/solve/CMakeFiles/solve.dir/build
+.PHONY : solve/fast
+
+#=============================================================================
+# Target rules for targets named spot
+
+# Build rule for target.
+spot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spot
+.PHONY : spot
+
+# fast build rule for target.
+spot/fast:
+	$(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/build
+.PHONY : spot/fast
+
+#=============================================================================
+# Target rules for targets named sprism
+
+# Build rule for target.
+sprism: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sprism
+.PHONY : sprism
+
+# fast build rule for target.
+sprism/fast:
+	$(MAKE) $(MAKESILENT) -f src/sprism/CMakeFiles/sprism.dir/build.make src/sprism/CMakeFiles/sprism.dir/build
+.PHONY : sprism/fast
+
+#=============================================================================
+# Target rules for targets named ssolag
+
+# Build rule for target.
+ssolag: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ssolag
+.PHONY : ssolag
+
+# fast build rule for target.
+ssolag/fast:
+	$(MAKE) $(MAKESILENT) -f src/ssolag/CMakeFiles/ssolag.dir/build.make src/ssolag/CMakeFiles/ssolag.dir/build
+.PHONY : ssolag/fast
+
+#=============================================================================
+# Target rules for targets named tetra
+
+# Build rule for target.
+tetra: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetra
+.PHONY : tetra
+
+# fast build rule for target.
+tetra/fast:
+	$(MAKE) $(MAKESILENT) -f src/tetra/CMakeFiles/tetra.dir/build.make src/tetra/CMakeFiles/tetra.dir/build
+.PHONY : tetra/fast
+
+#=============================================================================
+# Target rules for targets named therm
+
+# Build rule for target.
+therm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 therm
+.PHONY : therm
+
+# fast build rule for target.
+therm/fast:
+	$(MAKE) $(MAKESILENT) -f src/therm/CMakeFiles/therm.dir/build.make src/therm/CMakeFiles/therm.dir/build
+.PHONY : therm/fast
+
+#=============================================================================
+# Target rules for targets named tlbst
+
+# Build rule for target.
+tlbst: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tlbst
+.PHONY : tlbst
+
+# fast build rule for target.
+tlbst/fast:
+	$(MAKE) $(MAKESILENT) -f src/tlbst/CMakeFiles/tlbst.dir/build.make src/tlbst/CMakeFiles/tlbst.dir/build
+.PHONY : tlbst/fast
+
+#=============================================================================
+# Target rules for targets named tr2d
+
+# Build rule for target.
+tr2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tr2d
+.PHONY : tr2d
+
+# fast build rule for target.
+tr2d/fast:
+	$(MAKE) $(MAKESILENT) -f src/tr2d/CMakeFiles/tr2d.dir/build.make src/tr2d/CMakeFiles/tr2d.dir/build
+.PHONY : tr2d/fast
+
+#=============================================================================
+# Target rules for targets named truss
+
+# Build rule for target.
+truss: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 truss
+.PHONY : truss
+
+# fast build rule for target.
+truss/fast:
+	$(MAKE) $(MAKESILENT) -f src/truss/CMakeFiles/truss.dir/build.make src/truss/CMakeFiles/truss.dir/build
+.PHONY : truss/fast
+
+#=============================================================================
+# Target rules for targets named ttr2d
+
+# Build rule for target.
+ttr2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ttr2d
+.PHONY : ttr2d
+
+# fast build rule for target.
+ttr2d/fast:
+	$(MAKE) $(MAKESILENT) -f src/ttr2d/CMakeFiles/ttr2d.dir/build.make src/ttr2d/CMakeFiles/ttr2d.dir/build
+.PHONY : ttr2d/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +657,46 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... auxil"
+	@echo "... bak"
+	@echo "... beam2"
+	@echo "... beame"
+	@echo "... bsq"
+	@echo "... cont1"
+	@echo "... cont2"
+	@echo "... cont3"
+	@echo "... drawb"
+	@echo "... ele21"
+	@echo "... ele22"
+	@echo "... inclu"
+	@echo "... input"
+	@echo "... lbst"
+	@echo "... loads"
+	@echo "... mainp"
+	@echo "... matdb"
+	@echo "... nbst"
+	@echo "... new"
+	@echo "... old"
+	@echo "... prism"
+	@echo "... quadl"
+	@echo "... rbst"
+	@echo "... remesh"
+	@echo "... rigid"
+	@echo "... scpr03"
+	@echo "... shelq"
+	@echo "... shelt"
+	@echo "... shrev"
+	@echo "... solag"
+	@echo "... solve"
+	@echo "... spot"
+	@echo "... sprism"
+	@echo "... ssolag"
+	@echo "... tetra"
+	@echo "... therm"
+	@echo "... tlbst"
+	@echo "... tr2d"
+	@echo "... truss"
+	@echo "... ttr2d"
 .PHONY : help
 
 

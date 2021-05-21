@@ -1,6 +1,5 @@
 add_library(cont1 "")
 
-
 target_sources(cont1
   PUBLIC
     beam_ini.inc

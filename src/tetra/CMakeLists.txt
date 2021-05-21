@@ -1,10 +1,5 @@
 add_library(tetra "")
 
-target_link_libraries(tetra
-  PUBLIC
-    ssolag./tetra
-)
-
 target_sources(tetra
   PUBLIC
     acvd04.inc

@@ -1,6 +1,5 @@
 add_library(scpr03 "")
 
-
 target_sources(scpr03
   PUBLIC
     form_patch_lib.f90

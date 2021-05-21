@@ -2,7 +2,6 @@ add_library(cont3 "")
 
 target_link_libraries(cont3
   PUBLIC
-    mainp./mainp
     mainp
 )
 

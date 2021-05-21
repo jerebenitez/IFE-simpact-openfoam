@@ -2,7 +2,7 @@ add_library(drawb "")
 
 target_link_libraries(drawb
   PUBLIC
-    mainp./mainp
+    mainp
 )
 
 target_sources(drawb
@@ -33,8 +33,11 @@ target_sources(drawb
     inidb3.inc
     inidb4.inc
     insidf.f90
+    insidf.h
     linequ.f90
+    linequ.h
     linint.f90
+    linint.h
     linksd.inc
     prdbln.inc
     proje3.inc
@@ -47,4 +50,5 @@ target_sources(drawb
     wrtdb1.inc
     wrtdb2.inc
     zcoord.f90
+    zcoord.h
 )

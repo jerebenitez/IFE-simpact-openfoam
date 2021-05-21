@@ -2,7 +2,7 @@ add_library(nbst "")
 
 target_link_libraries(nbst
   PUBLIC
-    mainp./mainp
+    mainp
 )
 
 target_sources(nbst

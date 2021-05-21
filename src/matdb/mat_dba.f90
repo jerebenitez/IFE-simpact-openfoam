@@ -384,7 +384,7 @@
      c(1:36) = mat%prope(45:80)
    CASE DEFAULT
      c(1:36) = mat%prope(45:80)
-     WRITE(*) warntext
+     WRITE(*,*) warntext
      WRITE(lures,ERR=9999) warntext
    END SELECT
 !------------------------------------------------
@@ -400,7 +400,7 @@
      c(1:4) = mat%prope(19:22)
    CASE DEFAULT
      c(1:4) = mat%prope(16:19)
-     WRITE(*) warntext
+     WRITE(*,*) warntext
      WRITE(lures,ERR=9999) warntext
    END SELECT
 !------------------------------------------------
@@ -421,7 +421,7 @@
    !  c(1:4) = mat%prope(19:22)
    CASE DEFAULT
      c(1:4) = mat%prope(16:19)
-     WRITE(*) warntext
+     WRITE(*,*) warntext
      WRITE(lures,ERR=9999) warntext
    END SELECT
  CASE (5)        !3D laminated solid-shell
@@ -442,7 +442,7 @@
    END SELECT
 !------------------------------------------------
  CASE DEFAULT
-     WRITE(*) warntext
+     WRITE(*,*) warntext
      WRITE(lures,ERR=9999) warntext
 !------------------------------------------------
  END SELECT

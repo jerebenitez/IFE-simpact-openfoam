@@ -1,6 +1,5 @@
 add_library(bsq "")
 
-
 target_sources(bsq
   PUBLIC
     acvd25.inc

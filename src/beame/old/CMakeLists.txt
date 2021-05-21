@@ -1,11 +1,13 @@
-add_library(beame "")
+add_library(old "")
 
-add_subdirectory(old)
+target_link_libraries(old
+  PUBLIC
+    beame
+)
 
-target_sources(beame
+target_sources(old
   PUBLIC
     acvdf8.inc
-    bmatx8.inc
     commv8.inc
     cuate8.f90
     deltc8.inc
@@ -20,6 +22,7 @@ target_sources(beame
     istg18.inc
     istg28.inc
     locla8.inc
+    lumas8.inc
     masel8.inc
     masmt8.inc
     nodxy8.inc

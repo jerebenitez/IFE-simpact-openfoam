@@ -1,5 +1,9 @@
 add_library(matdb "")
 
+target_link_libraries(matdb
+  PUBLIC
+    mainp
+)
 
 target_sources(matdb
   PUBLIC

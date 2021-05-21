@@ -1,6 +1,5 @@
 add_library(spot "")
 
-
 target_sources(spot
   PUBLIC
     acvdf1.inc

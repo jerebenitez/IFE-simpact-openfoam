@@ -2,7 +2,7 @@ add_library(solag "")
 
 target_link_libraries(solag
   PUBLIC
-    mainp./mainp
+    mainp
 )
 
 target_sources(solag

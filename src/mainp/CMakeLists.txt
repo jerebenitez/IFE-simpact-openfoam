@@ -6,6 +6,8 @@ add_subdirectory(new)
 target_link_libraries(mainp
   PUBLIC
     input
+    remesh
+    matdb
 )
 
 target_sources(mainp
@@ -13,7 +15,9 @@ target_sources(mainp
     actcd.f90
     actrot.f90
     arisfi.f90
+    arisfi.h
     arisi0.f90
+    arisi0.h
     arisin.f90
     beginp.f90
     byebye.f90
@@ -23,44 +27,106 @@ target_sources(mainp
     cms_db.f90
     conini.f90
     coninp.f90
+    coninp.h
+    conta1.h
+    conta2.h
+    conta3.h
     contac.f90
     contol.f90
     coords.f90
     coract.f90
+    coract.h
     ctrl_db.f90
     curv_db.f90
     damp_db.f90
     dampin.f90
+    dampin.h
     data_inp.f90
     delnod.f90
+    delnod.h
     dump_cm.f90
     dumpin.f90
     dump_kc.f90
     dynamic.f90
+    elem04.h
+    elem05.h
+    elem10.h
+    elem11.h
+    elem13.h
+    elem14.h
+    elem15.h
+    elem16.h
+    elem17.h
+    elem18.h
+    elem19.h
+    elem20.h
+    elem21.h
+    elem22.h
+    elem24.h
+    elem25.h
     elemnt.f90
+    elemt1.h
+    elemt2.h
+    elemt6.h
+    elemt7.h
+    elemt8.h
+    elemt9.h
     elmdat.f90
+    elmdat.h
     endstr.f90
+    endstr.h
     eqnums.f90
     esets_db.f90
     explit.f90
+    explit.h
     export_db.f90
     fixdpd.f90
+    fixdpd.h
     fixrfd.f90
+    fixrfd.h
     fixsld.f90
+    fixsld.h
     fixva0.f90
+    fixva0.h
     fixval.f90
+    fixval.h
     functa.f90
     functs.f90
     gvar_db.f90
     histor.f90
     ifx_db.f90
     imcoor.f90
+    imcoor.h
     immtsc.f90
+    immtsc.h
     impfix.f90
     import.f90
     incdlt.f90
     inisld.f90
+    inisld.h
     initial_comp.f90
+    inpd04.h
+    inpd05.h
+    inpd10.h
+    inpd11.h
+    inpd13.h
+    inpd14.h
+    inpd15.h
+    inpd16.h
+    inpd17.h
+    inpd18.h
+    inpd19.h
+    inpd20.h
+    inpd21.h
+    inpd22.h
+    inpd24.h
+    inpd25.h
+    inpda1.h
+    inpda2.h
+    inpda6.h
+    inpda7.h
+    inpda8.h
+    inpda9.h
     inpdat.f90
     inrotm.f90
     intime.f90
@@ -81,24 +147,33 @@ target_sources(mainp
     nsets_db.f90
     nsld_db.f90
     nvdamp.f90
+    nvdamp.h
     outdyn.f90
     outp_db.f90
     param_db.f90
     predic.f90
+    predic.h
     prog_data.f90
     pstatic.f90
     rdconm.f90
     rdcoor.f90
     rdcurv.f90
     rdrfd0.f90
+    rdrfd0.h
     rdrfdp.f90
     rdsldn.f90
     rdvel0.f90
+    rdvel0.h
     rdvelr.f90
+    rdvelr.h
     rdvels.f90
+    rdvels.h
     readp0.f90
+    readp0.h
     readpd.f90
+    reasd0.h
     reasdf.f90
+    reasdf.h
     restar.f90
     rest_cm.f90
     rest_el.f90
@@ -106,6 +181,7 @@ target_sources(mainp
     rfdp_db.f90
     rve_db.f90
     scale_mass.f90
+    screen.h
     screin.f90
     slmass.f90
     sms_db.f90
@@ -120,6 +196,7 @@ target_sources(mainp
     trarot.f90
     updlon_kc.f90
     velnpo.f90
+    velnpo.h
     wrtpos.f90
     wrtrpt.f90
 )

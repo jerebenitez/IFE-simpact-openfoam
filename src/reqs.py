@@ -1,5 +1,6 @@
 import os, re, json, argparse, sys, jinja2
 from subprocess import Popen, PIPE
+from pathlib import Path
 
 
 def trail(filename):
@@ -27,17 +28,22 @@ def get_deps(directory, filename, dependencies_file):
     directory["deps"] = dir_dep
     
 
-def parse_directory(dictionary, directory, dependencies):
-  dictionary.append({"name": directory["name"], "files": [], "deps": set(), "directories": []})
+def parse_directory(dictionary, directory, dependencies, parent=None):
+  if parent is not None:
+    path = parent + "/" + directory["name"]
+  else:
+    path = directory["name"]
+  dictionary.append({"name": directory["name"], "path": path, "files": [], "deps": set(), "directories": []})
   current_directory = dictionary[-1]
   
   for content in directory["contents"]:
-    if content["type"] == "file" and content["name"].endswith(("f90", "inc")):
+    if content["type"] == "file" and content["name"].endswith(("f90", "inc", "h")):
       current_directory["files"].append(content["name"])
       get_deps(current_directory, content["name"], dependencies)
     
     if content["type"] == "directory":
-      parse_directory(current_directory["directories"], content, dependencies)
+      current_directory["directories"].append(content["name"])
+      parse_directory(dictionary, content, dependencies, parent=current_directory["name"])
 
 
 def print_cmake(struc):
@@ -47,16 +53,18 @@ def print_cmake(struc):
   template = templateEnv.get_template(TEMPLATE_FILE)
 
   for lib in struct:
-    fullpath = os.path.join(lib["name"], "CMakeLists.txt")
+    fullpath = os.path.join(lib["path"], "CMakeLists.txt")
 
     outputText = template.render(
       lib_name=lib["name"],
       sources=lib["files"],
-      subdirectories=[x["name"] for x in lib["directories"]],
+      subdirectories=lib["directories"],
       link_libraries=[ x for x in lib["deps"] if x != lib["name"]]
     )
 
-    with open(fullpath, "w") as f:
+    filename = Path(fullpath)
+    filename.touch(exist_ok=True)
+    with open(filename, "w") as f:
       print("Escribiendo {}".format(fullpath))
       f.write(outputText)
     
@@ -78,12 +86,3 @@ if __name__ == "__main__":
         parse_directory(struct, d, args.deps)
 
   print_cmake(struct)
-
-
-"""def parse_directory(directory):
-  print('add_library({} "")'.format(d["name"]))
-  print('target_sources({}\n\tPUBLIC'.format(d["name"]))
-  for content in d["contents"]:
-    if content["type"] == "file" and content["name"].endswith(("f90", "inc")):
-      print("\t\t${{CMAKE_CURRENT_LIST_DIR}}/{}".format(content["name"]))
-  print(")")"""

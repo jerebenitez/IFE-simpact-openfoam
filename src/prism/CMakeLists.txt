@@ -2,7 +2,7 @@ add_library(prism "")
 
 target_link_libraries(prism
   PUBLIC
-    mainp./mainp
+    mainp
 )
 
 target_sources(prism

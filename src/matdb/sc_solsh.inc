@@ -392,23 +392,23 @@
 
  var1%type = 2
  var1%dim = 3
- var1%name(:) = (/ 'Forces','N_xx','N_yy','N_xy',' ',' ',' ' /)
+ var1%name(:) = (/ 'Forces','N_xx  ','N_yy  ','N_xy  ','      ','      ','      ' /)
 
  var2%type = 2
  var2%dim = 3
- var2%name(:) = (/ 'Moments','M_xx','M_yy','M_xy',' ',' ',' ' /)
+ var2%name(:) = (/ 'Moments','M_xx   ','M_yy   ','M_xy   ','       ','       ','       ' /)
 
  var3%type = 1
  var3%dim = 2
- var3%name(:) = (/ 'Shear','Shear_X','Shear_y',' ',' ',' ',' ' /)
+ var3%name(:) = (/ 'Shear  ','Shear_X','Shear_y','       ','       ','       ','       ' /)
 
  var4%type = 2
  var4%dim = 4
- var4%name(:) = (/ 'Phi_Moment','Phi_Mxx','Phi_Myy','Phi_Mxy','Phi_Myx',' ',' ' /)
+ var4%name(:) = (/ 'Phi_Moment','Phi_Mxx   ','Phi_Myy   ','Phi_Mxy   ','Phi_Myx   ','          ','          ' /)
 
  var5%type = 1
  var5%dim = 2
- var5%name(:) = (/ 'Phi_Shear','Phi_Shear_X','Phi_Shear_y',' ',' ',' ',' ' /)
+ var5%name(:) = (/ 'Phi_Shear  ','Phi_Shear_X','Phi_Shear_y','           ','           ','           ','           ' /)
 
  sec%postp => var1   !keep pointer to first variable
  var1%next => var2

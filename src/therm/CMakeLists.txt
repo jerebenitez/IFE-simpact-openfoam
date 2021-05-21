@@ -16,9 +16,13 @@ target_sources(therm
     ift_db.f90
     rdfsur.f90
     rdheat.f90
+    rdheat.h
     rdhedg.f90
+    rdhedg.h
     rdhsur.f90
+    rdhsur.h
     rdpret.f90
+    rdpret.h
     rdtemp.f90
     tcsurf.f90
     texplit.f90

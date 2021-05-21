@@ -129,6 +129,102 @@ depend:
 	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/spot/CMakeFiles/spot.dir/rule:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/spot/CMakeFiles/spot.dir/rule
+.PHONY : src/spot/CMakeFiles/spot.dir/rule
+
+# Convenience name for target.
+spot: src/spot/CMakeFiles/spot.dir/rule
+
+.PHONY : spot
+
+# fast build rule for target.
+spot/fast:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/build
+.PHONY : spot/fast
+
+ele01_db.o: ele01_db.f90.o
+
+.PHONY : ele01_db.o
+
+# target to build an object file
+ele01_db.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/ele01_db.f90.o
+.PHONY : ele01_db.f90.o
+
+ele01_db.i: ele01_db.f90.i
+
+.PHONY : ele01_db.i
+
+# target to preprocess a source file
+ele01_db.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/ele01_db.f90.i
+.PHONY : ele01_db.f90.i
+
+ele01_db.s: ele01_db.f90.s
+
+.PHONY : ele01_db.s
+
+# target to generate assembly for a file
+ele01_db.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/ele01_db.f90.s
+.PHONY : ele01_db.f90.s
+
+elemt1.o: elemt1.f90.o
+
+.PHONY : elemt1.o
+
+# target to build an object file
+elemt1.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/elemt1.f90.o
+.PHONY : elemt1.f90.o
+
+elemt1.i: elemt1.f90.i
+
+.PHONY : elemt1.i
+
+# target to preprocess a source file
+elemt1.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/elemt1.f90.i
+.PHONY : elemt1.f90.i
+
+elemt1.s: elemt1.f90.s
+
+.PHONY : elemt1.s
+
+# target to generate assembly for a file
+elemt1.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/elemt1.f90.s
+.PHONY : elemt1.f90.s
+
+inpda1.o: inpda1.f90.o
+
+.PHONY : inpda1.o
+
+# target to build an object file
+inpda1.f90.o:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/inpda1.f90.o
+.PHONY : inpda1.f90.o
+
+inpda1.i: inpda1.f90.i
+
+.PHONY : inpda1.i
+
+# target to preprocess a source file
+inpda1.f90.i:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/inpda1.f90.i
+.PHONY : inpda1.f90.i
+
+inpda1.s: inpda1.f90.s
+
+.PHONY : inpda1.s
+
+# target to generate assembly for a file
+inpda1.f90.s:
+	cd /home/jerebenitez/fort/IFE-simpact-openfoam/build && $(MAKE) $(MAKESILENT) -f src/spot/CMakeFiles/spot.dir/build.make src/spot/CMakeFiles/spot.dir/inpda1.f90.s
+.PHONY : inpda1.f90.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +233,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... spot"
+	@echo "... ele01_db.o"
+	@echo "... ele01_db.i"
+	@echo "... ele01_db.s"
+	@echo "... elemt1.o"
+	@echo "... elemt1.i"
+	@echo "... elemt1.s"
+	@echo "... inpda1.o"
+	@echo "... inpda1.i"
+	@echo "... inpda1.s"
 .PHONY : help
 
 

@@ -2,7 +2,6 @@ add_library(shelt "")
 
 target_link_libraries(shelt
   PUBLIC
-    mainp./mainp
     mainp
 )
 

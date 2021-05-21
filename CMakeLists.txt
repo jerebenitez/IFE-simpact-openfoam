@@ -4,6 +4,11 @@ project(Simpact
   VERSION 1.0.0
   LANGUAGES Fortran)
 
+set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -fdec")
+set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -cpp")
+set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -DUNIX")
+set(ENV{UNIX} 1)
+
 include(GNUInstallDirs)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY
   ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})

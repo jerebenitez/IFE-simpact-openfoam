@@ -643,7 +643,7 @@
    !
    !*********************************************************************
 
-   !USE ifport  !Intel Compiler
+   !!USE ifport  !Intel Compiler
    USE name_db, ONLY: input, output, prognm, rsfprj, rsfstg, rsfnam, data_file,gen_data_file
    USE gvar_db, ONLY: actchk
    IMPLICIT NONE
@@ -1104,7 +1104,7 @@
    !     DELETE old files to be used
    !
    !*********************************************************************
-   USE ifport
+   !!USE ifport
    USE name_db, ONLY: output
    IMPLICIT NONE
 
@@ -1117,17 +1117,17 @@
      CHARACTER(len=mlen):: varname
      CHARACTER(len=mlen):: stval,fpath
 
-!#if UNIX
-!     fpath = './'
-!     fpatn = 2
-!#else
+#if UNIX
+     fpath = './'
+     fpatn = 2
+#else
      varname='STAMP_DTS'
      fpatn = GETENVQQ(varname(1:9), STVAL)
      stval = '.'
      fpatn = 1
      fpath = stval(1:fpatn)//'\'
      fpatn = fpatn + 1
-!#endif
+#endif
 
 
        SELECT CASE (flag)
@@ -1177,7 +1177,7 @@
    END SUBROUTINE del_old_files
 
    SUBROUTINE manage_last_file_names (flag)
-   USE ifport
+   !USE ifport
    USE name_db, ONLY: output, rsfprj, rsfstg, rsfnam, namr
    IMPLICIT NONE
 
@@ -1190,17 +1190,17 @@
      CHARACTER(len=mlen):: stval,fpath
      CHARACTER(len=mlen):: varname
 
-!#if UNIX
-!     fpath = './'
-!     fpatn = 2
-!#else
+#if UNIX
+     fpath = './'
+     fpatn = 2
+#else
      varname='STAMP_DTS'
      fpatn = GETENVQQ(varname(1:9), STVAL)
      stval = '.'
      fpatn = 1
      fpath = stval(1:fpatn)//'\'
      fpatn = fpatn + 1
-!#endif
+#endif
 
      SELECT CASE (flag)
      CASE (1)
@@ -1417,87 +1417,87 @@
    END FUNCTION lfile
 
    FUNCTION copy_file( old_name, new_name ) RESULT(dummy)
-!#ifdef __INTEL_COMPILER
+#ifdef __INTEL_COMPILER
   USE ifport
-!#else
-!  INTEGER :: SYSTEM
-!#endif
+#else
+  INTEGER :: SYSTEM
+#endif
      CHARACTER(*), INTENT(IN) :: old_name, new_name
      CHARACTER(400) :: command
      INTEGER :: dummy
 
-!#if UNIX
-!     command = 'cp -f '//old_name//' '//new_name//' '
-!     dummy = SYSTEM(TRIM(command))
-!#else
-!#  ifdef __INTEL_COMPILER
+#if UNIX
+     command = 'cp -f '//old_name//' '//new_name//' '
+     dummy = SYSTEM(TRIM(command))
+#else
+#  ifdef __INTEL_COMPILER
      command = 'COPY '//old_name//' '//new_name
      dummy = SYSTEM(TRIM(command))
-!#  else
-!     command = 'COPY '//old_name//' '//new_name
-!     CALL SYSTEM(TRIM(command))
-!     dummy = 0
-!#  endif
-!#endif
+#  else
+     command = 'COPY '//old_name//' '//new_name
+     CALL SYSTEM(TRIM(command))
+     dummy = 0
+#  endif
+#endif
   END FUNCTION copy_file
 
   FUNCTION if_exist_copy_file( old_name, new_name ) RESULT(dummy)
-!#ifdef __INTEL_COMPILER
+#ifdef __INTEL_COMPILER
   USE ifport
-!#else
-!  INTEGER :: SYSTEM
-!#endif
+#else
+  INTEGER :: SYSTEM
+#endif
      CHARACTER(*), INTENT(IN) :: old_name, new_name
      CHARACTER(400) :: command
      INTEGER :: dummy
 
-!#if UNIX
-!     command = 'if ( test -e '//old_name//' ); then '//    &
-!               ' cp -f '//old_name//' '//new_name//' ; fi'
-!     dummy = SYSTEM(TRIM(command))
-!#else
-!#  ifdef __INTEL_COMPILER
+#if UNIX
+     command = 'if ( test -e '//old_name//' ); then '//    &
+               ' cp -f '//old_name//' '//new_name//' ; fi'
+     dummy = SYSTEM(TRIM(command))
+#else
+#  ifdef __INTEL_COMPILER
      command = 'IF EXIST '//old_name//' '//    &
                'COPY '//old_name//' '//new_name
      dummy = SYSTEM(TRIM(command))
-!#  else
-!     command = 'IF EXIST '//old_name//' '//    &
-!               'COPY '//old_name//' '//new_name
-!     call SYSTEM(TRIM(command))
-!     dummy = 0
-!#  endif
-!#endif
+#  else
+     command = 'IF EXIST '//old_name//' '//    &
+               'COPY '//old_name//' '//new_name
+     call SYSTEM(TRIM(command))
+     dummy = 0
+#  endif
+#endif
   END FUNCTION if_exist_copy_file
 
 
   FUNCTION if_exist_remove_file( file_name1, file_name2 ) RESULT(dummy)
-!#ifdef __INTEL_COMPILER
+#ifdef __INTEL_COMPILER
   USE ifport
-!#else
-!#if UNIX
-!  INTEGER :: SYSTEM
-!#else
-!  USE dflib
-!#endif
-!#endif
+#else
+#if UNIX
+  INTEGER :: SYSTEM
+#else
+  USE dflib
+#endif
+#endif
      CHARACTER(*), INTENT(IN) :: file_name1, file_name2
      CHARACTER(400) :: command
      INTEGER :: dummy
 
-!#if UNIX
-!     command = 'if ( test -e '//file_name1//' ); then '//    &
-!               ' rm -f '//file_name2//' ; fi'
-!     dummy = SYSTEM(TRIM(command))
-!#else
-!#ifdef __INTEL_COMPILER
+#if UNIX
+     command = 'if ( test -e '//file_name1//' ); then '//    &
+               ' rm -f '//file_name2//' ; fi'
+     dummy = SYSTEM(TRIM(command))
+#else
+#ifdef __INTEL_COMPILER
      command = 'IF EXIST '//file_name1//' DEL '//file_name2
      dummy = SYSTEM(TRIM(command))
-!#else
-!     command = 'IF EXIST '//file_name1//' DEL '//file_name2
-!     CALL SYSTEM(TRIM(command))
-!     dummy = 0
-!#endif
-!#endif
+#else
+     command = 'IF EXIST '//file_name1//' DEL '//file_name2
+     CALL SYSTEM(TRIM(command))
+     dummy = 0
+#endif
+#endif
   END FUNCTION if_exist_remove_file
 
 

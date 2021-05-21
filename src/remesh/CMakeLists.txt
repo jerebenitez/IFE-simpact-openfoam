@@ -8,27 +8,42 @@ target_link_libraries(remesh
 target_sources(remesh
   PUBLIC
     del_e_mrea.f90
+    del_e_mrea.h
     deloln.f90
+    deloln.h
     dispcrv.f90
+    dispcrv.h
     dspval.f90
     exnods.f90
     fnod_fix.f90
+    fnod_fix.h
     get_ifxb.f90
+    get_ifxb.h
     meshmo_db.f90
     mshcri.f90
     newfix.f90
     nodfnd.f90
+    nodfnd.h
     plines.f90
+    plines.h
     pregid.f90
+    pregid.h
     qloop.f90
+    qloop.h
     rdmeshmo.f90
     remesh.f90
     rmctrln.f90
+    rmctrln.h
     rnmesh.f90
+    rnmesh.h
     solrem.f90
     sortlb.f90
     transf1.f90
+    transf1.h
     transf.f90
+    transf.h
     verifd.f90
+    verifd.h
     vertex.f90
+    vertex.h
 )

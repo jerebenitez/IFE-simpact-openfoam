@@ -2,8 +2,8 @@ add_library(ssolag "")
 
 target_link_libraries(ssolag
   PUBLIC
-    ssolag./tetra
-    mainp./mainp
+    mainp
+    tetra
 )
 
 target_sources(ssolag

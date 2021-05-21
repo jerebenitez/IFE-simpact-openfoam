@@ -2,7 +2,6 @@ add_library(rigid "")
 
 target_link_libraries(rigid
   PUBLIC
-    mainp./mainp
     mainp
 )
 

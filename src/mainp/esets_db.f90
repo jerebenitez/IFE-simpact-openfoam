@@ -40,14 +40,14 @@
      TYPE (set_label), POINTER :: next
    END TYPE set_label
 
-   CHARACTER (len=mset), PARAMETER :: snames(8)= (/ 'node set',          & !(1)
-                                                    'element set',       & !(2)
-                                                    'velocity set',      & !(3)
-                                                    'contact pair',      & !(4)
+   CHARACTER (len=mset), PARAMETER :: snames(8)= (/ 'node set       ',   & !(1)
+                                                    'element set    ',   & !(2)
+                                                    'velocity set   ',   & !(3)
+                                                    'contact pair   ',   & !(4)
                                                     'contact surface',   & !(5)
-                                                    'drawbead line',     & !(6)
-                                                    'load set',          & !(7)
-                                                    'heat set' /)          !(8)
+                                                    'drawbead line  ',   & !(6)
+                                                    'load set       ',   & !(7)
+                                                    'heat set       ' /)   !(8)
 
    INTEGER (kind=4) :: n_names=0               ! number of set names
    TYPE (set_label), POINTER :: snhead,sntail  !first and last names

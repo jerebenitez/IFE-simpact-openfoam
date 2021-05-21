@@ -2,7 +2,6 @@ add_library(tr2d "")
 
 target_link_libraries(tr2d
   PUBLIC
-    mainp./mainp
     mainp
 )
 
