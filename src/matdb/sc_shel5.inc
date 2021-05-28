@@ -318,7 +318,7 @@
    END DO
  END IF
  !  compute Shear correction factors
- db(:,1) = sec%rprop(12:14) ; db(:,2) = sec%rprop((/13,15:16/)) ; db(:,3) = sec%rprop((/14,16:17/))
+ db(:,1) = sec%rprop((/12,13,14/)) ; db(:,2) = sec%rprop((/13,15,16/)) ; db(:,3) = sec%rprop((/14,16,17/))
  CALL invmtx(db,dbi,det,3)
  h = 0d0
  ds = 0d0
@@ -329,7 +329,7 @@
    thickl = rprop(1,il)                          !layer thickness
    CALL elastiff(celoc,mat,4)              !get elastic stiffnes matrix 4=plain stress
    CALL rotortm(celoc,rprop(4:,il),ce,.TRUE.)     !rotate elastic in-plane matrix
-   cz(:,1) = ce((/1:3/)) ; cz(:,2) = ce((/2,4:5/)) ; cz(:,3) = ce((/3,5:6/))
+   cz(:,1) = ce((/1,2,3/)) ; cz(:,2) = ce((/2,4,5/)) ; cz(:,3) = ce((/3,5,6/))
    a = MATMUL(cz,dbi)*thickl
    d1 = RESHAPE( (/ a(1,1)+a(3,3), a(3,1)+a(2,3), a(1,3)+a(3,2), a(2,2)+a(3,3) /),(/2,2/))
    det = ce(7)*ce(9) - ce(8)*ce(8)
