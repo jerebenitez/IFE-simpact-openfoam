@@ -6,7 +6,7 @@
  !dummy arguments
  INTEGER (kind=4), INTENT(OUT) :: matdef(:),mtype
  !local variables
- CHARACTER(len=midn), PARAMETER :: pars(8,7) = (/ &
+ CHARACTER(len=midn), PARAMETER :: pars(8,7) = reshape ((/ &
  'RIGID ','ISOTRO','ORTHOT','RUBBER','POINTS','NONCOM','------','------', &
  'ELASTI','MISES ','HILL48','HILL79','HILL90','BBC03 ','NORM  ','------', &
  'IHNONE','IHLINE','IHLUDW','IHSATU','IHPOIN','IHHOLO','IHVOCE','------', &
