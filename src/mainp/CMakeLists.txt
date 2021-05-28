@@ -8,6 +8,7 @@ target_link_libraries(mainp
     input
     remesh
     matdb
+    beam2
 )
 
 target_sources(mainp
