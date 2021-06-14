@@ -195,7 +195,7 @@
         nba => posic%nhead
         DO iel=1,posic%nbn
           nb => nba
-          DEALLOCATE(nb%lnods,nb%alph0,nb%fc,nb%bb,nb)
+          DEALLOCATE(nb%lnods,nb%alph0,nb%fc,nb%bb)
           nba => nb%next
           DEALLOCATE(nb)
         END DO

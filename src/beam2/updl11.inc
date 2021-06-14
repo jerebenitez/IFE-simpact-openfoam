@@ -47,7 +47,7 @@
        ni => elset%nhead
        DO i=1,elset%nbn
          nb => ni
-         DEALLOCATE(nb%lnods,nb%alph0,nb%fc,nb%bb,nb)
+         DEALLOCATE(nb%lnods,nb%alph0,nb%fc,nb%bb)
          ni => nb%next
          DEALLOCATE(nb)
        END DO
